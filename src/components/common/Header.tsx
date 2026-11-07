@@ -36,9 +36,9 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 w-full bg-white shadow-sm">
-      {/* Top Disclosure Strip - 100% solid opaque background; smoothly hides after scroll */}
+      {/* Top Disclosure Strip - Shown only on laptop/desktop (hidden on mobile and tablet); smoothly hides after scroll */}
       <div
-        className={`w-full overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`hidden lg:block w-full overflow-hidden transition-all duration-300 ease-in-out ${
           isScrolled
             ? "max-h-0 opacity-0 -translate-y-full pointer-events-none"
             : "max-h-16 opacity-100 translate-y-0"
