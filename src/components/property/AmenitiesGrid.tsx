@@ -69,6 +69,12 @@ export default function AmenitiesGrid({ amenities }: AmenitiesGridProps) {
             </div>
           ))}
         </div>
+
+        <div className="mt-8 text-center">
+          <p className="text-xs text-stone-500 font-light">
+            Amenities shown are for reference only. Availability, access, timings and inclusions may vary.
+          </p>
+        </div>
       </div>
     </section>
   );

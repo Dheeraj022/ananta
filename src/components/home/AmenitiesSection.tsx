@@ -130,17 +130,19 @@ export default function AmenitiesSection() {
         </div>
 
         {/* Bottom Note */}
-        <div className="mt-12 text-center">
-          <p className="text-xs text-stone-500 font-light mb-3">
-            Note: Specific amenities and venue capacities may vary across individual properties.
+        <div className="mt-10 text-center space-y-2">
+          <p className="text-xs text-stone-500 font-light">
+            Amenities shown are for reference only. Availability, access, timings and inclusions may vary.
           </p>
-          <Link
-            href="/#properties"
-            className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-forest font-semibold hover:underline"
-          >
-            <span>View property-specific amenities</span>
-            <ArrowRight className="w-3.5 h-3.5" />
-          </Link>
+          <div>
+            <Link
+              href="/#properties"
+              className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-forest font-semibold hover:underline"
+            >
+              <span>View property-specific amenities</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
         </div>
       </div>
     </section>
