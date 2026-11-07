@@ -103,15 +103,20 @@ export default function EnquiryStrip() {
   return (
     <div className="bg-white/95 backdrop-blur-md rounded-lg p-4 sm:p-5 shadow-2xl border border-sand/80 text-charcoal">
       {/* Top Header */}
-      <div className="flex items-center justify-between mb-3 border-b border-stone-200/60 pb-2">
-        <div className="flex items-center gap-2">
-          <span className="w-2.5 h-2.5 rounded-full bg-forest animate-pulse" />
-          <span className="text-xs uppercase tracking-wider font-semibold text-charcoal">
-            Stay Enquiry Concierge
-          </span>
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 border-b border-stone-200/60 pb-2.5 gap-2">
+        <div>
+          <div className="flex items-center gap-2">
+            <span className="w-2.5 h-2.5 rounded-full bg-forest animate-pulse" />
+            <span className="text-xs uppercase tracking-wider font-semibold text-charcoal">
+              Stay Enquiry Concierge
+            </span>
+          </div>
+          <p className="text-[11px] text-stone-600 font-light mt-0.5">
+            Share your travel dates and preferences. Our team will assist you with the best options and enquiry support.
+          </p>
         </div>
-        <span className="text-[10px] text-stone-500 uppercase tracking-widest hidden sm:inline">
-          Not a live booking engine • Select dates & search resort
+        <span className="text-[10px] text-stone-500 uppercase tracking-widest hidden md:inline shrink-0 self-start sm:self-center">
+          Request only. Our team will share availability, pricing and stay details.
         </span>
       </div>
 

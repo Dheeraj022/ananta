@@ -13,7 +13,7 @@ export const siteConfig = {
   contact: {
     phone: "+91 98765 43210 (Guest-assist Desk)",
     phoneRaw: "+919876543210",
-    email: "enquiry@guest-assist.com",
+    email: "info@guest-assist.com",
     hours: "Monday – Saturday: 9:00 AM – 8:00 PM IST",
     address: "Guest-assist Operations Desk, Travel Partner Network, Rajasthan, India",
     isPlaceholder: true, // Marked for client verification

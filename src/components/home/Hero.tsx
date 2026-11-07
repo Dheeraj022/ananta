@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useEnquiry } from "../enquiry/EnquiryContext";
-import { CalendarCheck, Compass, ShieldCheck } from "lucide-react";
+import { CalendarCheck, Compass } from "lucide-react";
 import EnquiryStrip from "./EnquiryStrip";
 
 const heroSlides = [
@@ -78,14 +78,6 @@ export default function Hero() {
       {/* Main Content Area */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24 pb-8 flex-grow flex flex-col justify-center">
         <div className="max-w-3xl">
-          {/* Eyebrow badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-charcoal-dark/70 border border-gold/30 backdrop-blur-md mb-6">
-            <ShieldCheck className="w-4 h-4 text-gold" />
-            <span className="text-[11px] sm:text-xs uppercase tracking-[0.2em] text-stone-200 font-medium">
-              Guest-assist • Rajasthan Collection
-            </span>
-          </div>
-
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-light tracking-tight leading-[1.1] mb-6">
             Discover Four Distinct Retreats Across Rajasthan
