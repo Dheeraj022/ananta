@@ -1,49 +1,12 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
+import React from "react";
 import { useEnquiry } from "../enquiry/EnquiryContext";
 import { CalendarCheck, Compass } from "lucide-react";
 import EnquiryStrip from "./EnquiryStrip";
 
-const heroSlides = [
-  {
-    image:
-      "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_2810/x_2,y_0,w_4996,h_2810,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/ananta-hotels-resorts/The_Ananta_Udaipur_1_niakxc",
-    title: "Nature-Inspired Sanctuary in Udaipur",
-    caption: "The Ananta Udaipur — 40+ acres amidst the rolling Aravalli Hills",
-  },
-  {
-    image:
-      "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_2813/x_0,y_0,w_4996,h_2813,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/ananta-spa-and-resort-pushkar/A_decorative_shade_at_our_5-star_resort_in_Pushkar_with_a_Ganesh_statue,_a_green_patch_and_trees_",
-    title: "Tented Luxury & Serenity in Pushkar",
-    caption: "Ananta Spa & Resort Pushkar — Desert cottages & canopied suites",
-  },
-  {
-    image:
-      "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/ananta-spa-and-resort-ajabgarh/Reception_a10391d9",
-    title: "Secluded Mountain Hideaway in Ajabgarh",
-    caption: "Ananta Spa & Resort Ajabgarh — Boutique peace & private plunge pools",
-  },
-  {
-    image:
-      "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3335/x_0,y_261,w_5000,h_2812,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/ananta-hotels-resorts/0A4A7146_k3um8e",
-    title: "Palatial Rajputana Grandeur in Jaipur",
-    caption: "Ananta Spa & Resort Jaipur — Kukas luxury close to Amer Fort",
-  },
-];
-
 export default function Hero() {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const { openEnquiry } = useEnquiry();
-
-  // Subtle auto-rotation
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 7000);
-    return () => clearInterval(timer);
-  }, []);
 
   const scrollToProperties = () => {
     const el = document.getElementById("properties");
@@ -52,28 +15,21 @@ export default function Hero() {
 
   return (
     <div className="relative min-h-[85vh] lg:min-h-[90vh] flex flex-col justify-between bg-charcoal text-white overflow-hidden">
-      {/* Background Carousel */}
-      {heroSlides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === currentSlide ? "opacity-50" : "opacity-0"
-          }`}
-          aria-hidden={index !== currentSlide}
+      {/* Background Video */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="https://assets.simplotel.com/simplotel/image/upload/w_5000,h_2810/x_2,y_0,w_4996,h_2810,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/ananta-hotels-resorts/The_Ananta_Udaipur_1_niakxc"
+          className="absolute inset-0 w-full h-full object-cover opacity-60 scale-105"
         >
-          <Image
-            src={slide.image}
-            alt={slide.caption}
-            fill
-            priority={index === 0}
-            sizes="100vw"
-            className="object-cover scale-105 transition-transform duration-[8000ms] ease-out"
-          />
-        </div>
-      ))}
-
-      {/* Atmospheric Gradient Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-black/30 pointer-events-none" />
+          <source src="/ananta_website_changes_3_1_1.mp4" type="video/mp4" />
+        </video>
+        {/* Atmospheric Gradient Overlays to preserve text readability */}
+        <div className="absolute inset-0 bg-charcoal/40 bg-gradient-to-t from-charcoal via-charcoal/30 to-black/50 pointer-events-none" />
+      </div>
 
       {/* Main Content Area */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24 pb-8 flex-grow flex flex-col justify-center">
@@ -127,24 +83,6 @@ export default function Hero() {
               <span>Send an Enquiry</span>
             </button>
           </div>
-        </div>
-
-        {/* Slide Indicators */}
-        <div className="mt-12 flex items-center gap-3">
-          {heroSlides.map((slide, idx) => (
-            <button
-              key={idx}
-              type="button"
-              onClick={() => setCurrentSlide(idx)}
-              className={`h-1 transition-all duration-300 rounded-full ${
-                idx === currentSlide ? "w-10 bg-gold" : "w-4 bg-white/30 hover:bg-white/50"
-              }`}
-              aria-label={`Go to slide ${idx + 1}`}
-            />
-          ))}
-          <span className="text-[11px] text-stone-300 italic ml-2 hidden sm:inline">
-            {heroSlides[currentSlide].caption}
-          </span>
         </div>
       </div>
 

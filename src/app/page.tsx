@@ -5,7 +5,6 @@ import PropertyGrid from "@/components/home/PropertyGrid";
 import AmenitiesSection from "@/components/home/AmenitiesSection";
 import HighlightsSection from "@/components/home/HighlightsSection";
 import HowItWorksSection from "@/components/home/HowItWorksSection";
-import WhyExploreSection from "@/components/home/WhyExploreSection";
 import FaqSection from "@/components/home/FaqSection";
 import OurRoleSection from "@/components/home/OurRoleSection";
 import HomeEnquirySection from "@/components/home/HomeEnquirySection";
@@ -29,19 +28,16 @@ export default function HomePage() {
       {/* 5. Get Your Stay Information in Simple Steps */}
       <HowItWorksSection />
 
-      {/* 6. Why Explore With Us */}
-      <WhyExploreSection />
-
-      {/* 7. Frequently Asked Questions */}
+      {/* 6. Frequently Asked Questions */}
       <FaqSection />
 
-      {/* 8. Introduction & Partner Gateway Section */}
+      {/* 7. Introduction & Partner Gateway Section */}
       <IntroSection />
 
-      {/* 9. Our Role & Independence Section (Matching Reference Design) */}
+      {/* 8. Our Role & Independence Section (Matching Reference Design) */}
       <OurRoleSection />
 
-      {/* 10. Enquiry CTA Section & Form */}
+      {/* 9. Enquiry CTA Section & Form */}
       <HomeEnquirySection />
     </>
   );
