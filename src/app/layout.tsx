@@ -9,11 +9,12 @@ import { siteConfig } from "@/data/site-config";
 
 export const metadata: Metadata = {
   title: {
-    default: "Ananta Hotels Rajasthan Stays — Independent Travel Partner",
-    template: "%s | Ananta Hotels Partner",
+    default: "Guest Assists — Ananta Hotels Rajasthan Stays Enquiry",
+    template: "%s | Guest Assists",
   },
   description: siteConfig.description,
   keywords: [
+    "Guest Assists",
     "Ananta Udaipur",
     "Ananta Pushkar",
     "Ananta Ajabgarh",
@@ -21,11 +22,11 @@ export const metadata: Metadata = {
     "Rajasthan luxury resort stay enquiry",
     "Independent travel partner Ananta",
   ],
-  metadataBase: new URL("https://ananta-hotels-partner.vercel.app"),
+  metadataBase: new URL("https://guestassists.com"),
   openGraph: {
-    title: "Ananta Hotels Rajasthan Stays — Independent Travel Partner",
+    title: "Guest Assists — Ananta Hotels Rajasthan Stays Enquiry",
     description: siteConfig.description,
-    url: "https://ananta-hotels-partner.vercel.app",
+    url: "https://guestassists.com",
     siteName: siteConfig.name,
     locale: "en_IN",
     type: "website",

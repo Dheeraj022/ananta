@@ -40,7 +40,7 @@ export default function AboutPage() {
             Who We Are
           </h2>
           <p>
-            We are an <strong>independent travel partner network</strong> providing curated
+            <strong>Guest Assists</strong> is an <strong>independent travel partner</strong> providing curated
             hospitality information, accommodation browsing, and stay enquiry coordination for
             visitors interested in Rajasthan&apos;s celebrated Ananta resorts.
           </p>

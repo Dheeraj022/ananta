@@ -58,11 +58,11 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo / Brand Area */}
           <Link href="/" className="group flex flex-col">
-            <span className="font-serif text-xl sm:text-2xl tracking-[0.18em] text-charcoal font-normal uppercase group-hover:text-forest transition-colors">
-              ANANTA
+            <span className="font-serif text-xl sm:text-2xl tracking-[0.14em] text-charcoal font-semibold uppercase group-hover:text-forest transition-colors">
+              GUEST ASSISTS
             </span>
-            <span className="text-[9px] sm:text-[10px] tracking-[0.25em] text-forest uppercase font-medium -mt-0.5">
-              Independent Partner Stays
+            <span className="text-[9px] sm:text-[10px] tracking-[0.22em] text-forest uppercase font-medium -mt-0.5">
+              Independent Travel Partner
             </span>
           </Link>
 

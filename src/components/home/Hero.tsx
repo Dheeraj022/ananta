@@ -82,7 +82,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-charcoal-dark/70 border border-gold/30 backdrop-blur-md mb-6">
             <ShieldCheck className="w-4 h-4 text-gold" />
             <span className="text-[11px] sm:text-xs uppercase tracking-[0.2em] text-stone-200 font-medium">
-              Independent Partner Stays • Rajasthan Collection
+              Guest Assists • Rajasthan Collection
             </span>
           </div>
 

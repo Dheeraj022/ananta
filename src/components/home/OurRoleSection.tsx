@@ -34,7 +34,7 @@ export default function OurRoleSection() {
           {/* Descriptive Statements */}
           <div className="space-y-2 text-stone-700 text-sm sm:text-base leading-relaxed">
             <p>
-              {siteConfig.shortTitle} is operated by an independent travel agency partner network.
+              Guest Assists is operated by an independent travel agency.
             </p>
             <p className="text-stone-600">
               We provide general property information, guidance and enquiry assistance.

@@ -1,20 +1,21 @@
 export const siteConfig = {
-  name: "Rajasthan Luxury Retreats — Independent Partner",
-  shortTitle: "Ananta Resorts Partner Stays",
+  name: "Guest Assists — Independent Travel Partner",
+  shortTitle: "Guest Assists",
+  brandName: "Guest Assists",
   description:
-    "Explore four premier Ananta hotel properties across Rajasthan: Udaipur, Pushkar, Ajabgarh, and Jaipur. Dedicated travel partner assisting with bespoke stay enquiries and retreat planning.",
+    "Guest Assists is an independent travel partner helping travelers discover and submit stay enquiries for four premier Ananta hotel properties across Rajasthan: Udaipur, Pushkar, Ajabgarh, and Jaipur.",
   partnerDisclosure:
-    "We are an independent travel partner providing property information and assisting visitors with stay enquiries. We are not the official website of Ananta Hotels. Property names, descriptions, and images are used for identification and informational purposes, subject to applicable permissions. Enquiry submission does not confirm a booking or guarantee availability.",
+    "Guest Assists is an independent travel partner providing property information and assisting visitors with stay enquiries. We are not the official website of Ananta Hotels. Property names, descriptions, and images are used for identification and informational purposes. Enquiry submission does not confirm a booking or guarantee availability.",
   shortDisclosure:
-    "Independent Travel Partner • Property Discovery & Enquiry Concierge Only • Not the Official Ananta Hotels Website",
+    "Guest Assists • Independent Travel Partner • Property Discovery & Enquiry Concierge Only • Not the Official Ananta Hotels Website",
   bookingNotice:
     "Submitting an enquiry does not confirm a booking or guarantee room availability. All requests are subject to confirmation through the relevant property or booking channel.",
   contact: {
-    phone: "+91 98765 43210 (Enquiry Desk)",
+    phone: "+91 98765 43210 (Guest Assists Desk)",
     phoneRaw: "+919876543210",
-    email: "stay-enquiries@luxuryretreatspartner.com",
+    email: "enquiry@guestassists.com",
     hours: "Monday – Saturday: 9:00 AM – 8:00 PM IST",
-    address: "Concierge Operations Desk, Travel Partner Network, Rajasthan, India",
+    address: "Guest Assists Operations Desk, Travel Partner Network, Rajasthan, India",
     isPlaceholder: true, // Marked for client verification
   },
   navigation: [

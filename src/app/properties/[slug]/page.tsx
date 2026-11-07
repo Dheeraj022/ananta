@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: PropertyPageProps): Promise<M
     title: `${property.name} — ${property.location.city}, Rajasthan`,
     description: `${property.shortDescription} Explore room categories, resort facilities, and submit stay enquiries with an independent travel partner.`,
     openGraph: {
-      title: `${property.name} | Ananta Hotels Partner`,
+      title: `${property.name} | Guest Assists`,
       description: property.shortDescription,
       images: [{ url: property.heroImage }],
     },
