@@ -14,7 +14,7 @@ export default function PropertyGrid({ properties }: PropertyGridProps) {
         <SectionHeading
           eyebrow="The Collection"
           title="Featured Ananta Properties"
-          subtitle="Discover four unique hospitality environments across Rajasthan, each offering verified factual descriptions, verified accommodation categories, and dedicated enquiry assistance."
+          subtitle="Explore four unique Rajasthan stays with verified details, room categories, and dedicated enquiry support."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-10">

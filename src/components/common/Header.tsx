@@ -59,7 +59,7 @@ export default function Header() {
           {/* Logo / Brand Area */}
           <Link href="/" className="group flex flex-col">
             <span className="font-serif text-xl sm:text-2xl tracking-[0.14em] text-charcoal font-semibold uppercase group-hover:text-forest transition-colors">
-              GUEST ASSISTS
+              GUEST-ASSIST
             </span>
             <span className="text-[9px] sm:text-[10px] tracking-[0.22em] text-forest uppercase font-medium -mt-0.5">
               Independent Travel Partner

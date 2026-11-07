@@ -18,7 +18,7 @@ export default function IntroSection() {
             />
 
             <p className="text-base text-stone-700 leading-relaxed font-light">
-              At <strong>Guest Assists</strong>, we operate as an independent travel partner focused on helping travelers discover and
+              At <strong>Guest-assist</strong>, we operate as an independent travel partner focused on helping travelers discover and
               plan stays across four distinguished Ananta hotel properties in Rajasthan. Whether
               you seek the verdant tranquility of Udaipur, the spiritual serenity of Pushkar, the
               secluded valleys of Ajabgarh, or the royal architecture of Jaipur, our platform

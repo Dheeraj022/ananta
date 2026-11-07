@@ -76,7 +76,7 @@ export default function AmenitiesSection() {
         <SectionHeading
           eyebrow="Resort Living & Facilities"
           title="Amenities at Ananta"
-          subtitle="From therapeutic Ayurvedic spas and sparkling swimming pools to gourmet dining venues and expansive celebration lawns, discover the exceptional facilities that define an Ananta retreat."
+          subtitle="Experience exceptional amenities, from Ayurvedic spas and pools to fine dining and grand celebration lawns."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -17,26 +17,26 @@ export default function HomePage() {
       {/* 1. Hero Section with Background Carousel & Search Strip */}
       <Hero />
 
-      {/* 2. Introduction Section with Disclosure */}
-      <IntroSection />
-
-      {/* 3. Featured Properties Grid */}
+      {/* 2. Featured Properties Grid */}
       <PropertyGrid properties={properties} />
 
-      {/* 4. Amenities at Ananta Section */}
+      {/* 3. Amenities at Ananta Section */}
       <AmenitiesSection />
 
-      {/* 5. Experience & Architectural Highlights */}
+      {/* 4. Experience & Architectural Highlights */}
       <HighlightsSection />
 
-      {/* 6. Get Your Stay Information in Simple Steps */}
+      {/* 5. Get Your Stay Information in Simple Steps */}
       <HowItWorksSection />
 
-      {/* 7. Why Explore With Us */}
+      {/* 6. Why Explore With Us */}
       <WhyExploreSection />
 
-      {/* 8. Frequently Asked Questions */}
+      {/* 7. Frequently Asked Questions */}
       <FaqSection />
+
+      {/* 8. Introduction & Partner Gateway Section */}
+      <IntroSection />
 
       {/* 9. Our Role & Independence Section (Matching Reference Design) */}
       <OurRoleSection />

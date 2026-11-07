@@ -1,21 +1,21 @@
 export const siteConfig = {
-  name: "Guest Assists — Independent Travel Partner",
-  shortTitle: "Guest Assists",
-  brandName: "Guest Assists",
+  name: "Guest-assist — Independent Travel Partner",
+  shortTitle: "Guest-assist",
+  brandName: "Guest-assist",
   description:
-    "Guest Assists is an independent travel partner helping travelers discover and submit stay enquiries for four premier Ananta hotel properties across Rajasthan: Udaipur, Pushkar, Ajabgarh, and Jaipur.",
+    "Guest-assist is an independent travel partner helping travelers discover and submit stay enquiries for four premier Ananta hotel properties across Rajasthan: Udaipur, Pushkar, Ajabgarh, and Jaipur.",
   partnerDisclosure:
-    "Guest Assists is an independent travel partner providing property information and assisting visitors with stay enquiries. We are not the official website of Ananta Hotels. Property names, descriptions, and images are used for identification and informational purposes. Enquiry submission does not confirm a booking or guarantee availability.",
+    "Guest-assist is an independent travel partner providing property information and assisting visitors with stay enquiries. We are not the official website of Ananta Hotels. Property names, descriptions, and images are used for identification and informational purposes. Enquiry submission does not confirm a booking or guarantee availability.",
   shortDisclosure:
-    "Guest Assists • Independent Travel Partner • Property Discovery & Enquiry Concierge Only • Not the Official Ananta Hotels Website",
+    "Guest-assist • Independent Travel Partner • Property Discovery & Enquiry Concierge Only • Not the Official Ananta Hotels Website",
   bookingNotice:
     "Submitting an enquiry does not confirm a booking or guarantee room availability. All requests are subject to confirmation through the relevant property or booking channel.",
   contact: {
-    phone: "+91 98765 43210 (Guest Assists Desk)",
+    phone: "+91 98765 43210 (Guest-assist Desk)",
     phoneRaw: "+919876543210",
-    email: "enquiry@guestassists.com",
+    email: "enquiry@guest-assist.com",
     hours: "Monday – Saturday: 9:00 AM – 8:00 PM IST",
-    address: "Guest Assists Operations Desk, Travel Partner Network, Rajasthan, India",
+    address: "Guest-assist Operations Desk, Travel Partner Network, Rajasthan, India",
     isPlaceholder: true, // Marked for client verification
   },
   navigation: [

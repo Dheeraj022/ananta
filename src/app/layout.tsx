@@ -9,12 +9,12 @@ import { siteConfig } from "@/data/site-config";
 
 export const metadata: Metadata = {
   title: {
-    default: "Guest Assists — Ananta Hotels Rajasthan Stays Enquiry",
-    template: "%s | Guest Assists",
+    default: "Guest-assist — Ananta Hotels Rajasthan Stays Enquiry",
+    template: "%s | Guest-assist",
   },
   description: siteConfig.description,
   keywords: [
-    "Guest Assists",
+    "Guest-assist",
     "Ananta Udaipur",
     "Ananta Pushkar",
     "Ananta Ajabgarh",
@@ -22,11 +22,11 @@ export const metadata: Metadata = {
     "Rajasthan luxury resort stay enquiry",
     "Independent travel partner Ananta",
   ],
-  metadataBase: new URL("https://guestassists.com"),
+  metadataBase: new URL("https://guest-assist.com"),
   openGraph: {
-    title: "Guest Assists — Ananta Hotels Rajasthan Stays Enquiry",
+    title: "Guest-assist — Ananta Hotels Rajasthan Stays Enquiry",
     description: siteConfig.description,
-    url: "https://guestassists.com",
+    url: "https://guest-assist.com",
     siteName: siteConfig.name,
     locale: "en_IN",
     type: "website",

@@ -14,14 +14,14 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <div>
               <span className="font-serif text-2xl tracking-[0.16em] text-white uppercase font-normal">
-                GUEST ASSISTS
+                GUEST-ASSIST
               </span>
               <span className="block text-[10px] tracking-[0.24em] text-gold uppercase mt-0.5">
                 Independent Travel Partner
               </span>
             </div>
             <p className="text-xs text-stone-400 leading-relaxed max-w-sm">
-              Guest Assists is an independent travel partner helping discerning travelers discover and submit stay
+              Guest-assist is an independent travel partner helping discerning travelers discover and submit stay
               enquiries for four exceptional Ananta resort properties across Rajasthan.
             </p>
             <div className="pt-2">
