@@ -78,16 +78,34 @@ export default function Hero() {
       {/* Main Content Area */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24 pb-8 flex-grow flex flex-col justify-center">
         <div className="max-w-3xl">
+          {/* Eyebrow Label */}
+          <div className="flex items-center gap-2 mb-3 sm:mb-4">
+            <span className="h-px w-6 bg-gold inline-block" />
+            <span className="text-xs uppercase tracking-[0.22em] font-medium text-gold">
+              Info & Details
+            </span>
+          </div>
+
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-light tracking-tight leading-[1.1] mb-6">
-            Discover Four Distinct Retreats Across Rajasthan
+            Explore Ananta Spa & Resorts, Rajasthan
           </h1>
 
           {/* Supporting Copy */}
-          <p className="text-base sm:text-lg text-stone-200 leading-relaxed font-light mb-10 max-w-2xl">
-            Explore premier Ananta hotel properties nestled among the Aravalli hills, sacred desert
-            sands, secluded valleys, and royal highways. Submit an enquiry to plan your bespoke stay.
+          <p className="text-base sm:text-lg text-stone-200 leading-relaxed font-light mb-6 max-w-2xl">
+            Find property information and enquire about stay details and accommodation options.
           </p>
+
+          {/* Trust Badge Pill — Shown only on laptop/desktop, positioned below supporting copy */}
+          <div className="hidden lg:inline-flex items-center gap-3.5 px-6 py-2 rounded-full bg-[#0B1A14]/90 border border-[#BA9554] backdrop-blur-md mb-8 shadow-lg">
+            <span className="text-xs font-medium text-[#F3CA7E] tracking-wide">Enquiry Based</span>
+            <span className="w-px h-3.5 bg-[#BA9554]/60" />
+            <span className="text-xs font-medium text-[#F3CA7E] tracking-wide">No Booking</span>
+            <span className="w-px h-3.5 bg-[#BA9554]/60" />
+            <span className="text-xs font-medium text-[#F3CA7E] tracking-wide">No Payment</span>
+            <span className="w-px h-3.5 bg-[#BA9554]/60" />
+            <span className="text-xs font-medium text-[#F3CA7E] tracking-wide">Independent Service</span>
+          </div>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
