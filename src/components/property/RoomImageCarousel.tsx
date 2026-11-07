@@ -7,9 +7,14 @@ import { ChevronLeft, ChevronRight, Image as ImageIcon } from "lucide-react";
 interface RoomImageCarouselProps {
   images: string[];
   roomName: string;
+  showThumbnails?: boolean;
 }
 
-export default function RoomImageCarousel({ images, roomName }: RoomImageCarouselProps) {
+export default function RoomImageCarousel({
+  images,
+  roomName,
+  showThumbnails = true,
+}: RoomImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   if (!images || images.length === 0) {
@@ -72,7 +77,7 @@ export default function RoomImageCarousel({ images, roomName }: RoomImageCarouse
       </div>
 
       {/* Thumbnails */}
-      {images.length > 1 && (
+      {showThumbnails && images.length > 1 && (
         <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-thin">
           {images.map((img, idx) => (
             <button
