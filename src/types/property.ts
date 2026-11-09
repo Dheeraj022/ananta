@@ -50,6 +50,7 @@ export interface Property {
     };
   };
   tagline: string;
+  heroIntro?: string;
   heroImage: string;
   cardImage: string;
   gallery: string[];

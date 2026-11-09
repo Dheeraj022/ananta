@@ -24,6 +24,8 @@ export const properties: Property[] = [
     name: "The Ananta Udaipur",
     shortName: "Udaipur",
     tagline: "A tranquil sanctuary sprawled across 40+ acres in the Aravalli Hills",
+    heroIntro:
+      "Welcome to a tranquil 40-acre hillside retreat in the Aravalli range, featuring Balinese villas, open-to-sky showers, and scenic mountain views.",
     location: {
       city: "Udaipur",
       state: "Rajasthan",
@@ -288,6 +290,8 @@ export const properties: Property[] = [
     name: "Ananta Spa & Resort Pushkar",
     shortName: "Pushkar",
     tagline: "Serene heritage luxury and tented sanctuaries near holy Pushkar",
+    heroIntro:
+      "Welcome to a serene desert sanctuary set against the Aravalli hills, featuring royal glamping tents, private jacuzzi cottages, and peaceful surroundings.",
     location: {
       city: "Pushkar",
       state: "Rajasthan",
@@ -494,6 +498,8 @@ export const properties: Property[] = [
     name: "Ananta Spa & Resort Ajabgarh",
     shortName: "Ajabgarh",
     tagline: "An intimate mountain hideaway in the secluded valley of Alwar",
+    heroIntro:
+      "Welcome to an intimate mountain hideaway in the secluded Sariska valley, featuring private plunge pool villas, lush landscapes, and forest serenity.",
     location: {
       city: "Ajabgarh",
       state: "Rajasthan",
@@ -692,6 +698,8 @@ export const properties: Property[] = [
     name: "Ananta Spa & Resort Jaipur",
     shortName: "Jaipur",
     tagline: "Royal palatial grandeur on the gateway of the Pink City",
+    heroIntro:
+      "Welcome to royal palatial hospitality on the gateway to the Pink City, featuring opulent courtyard suites, expansive banquet lawns, and regal charm.",
     location: {
       city: "Jaipur",
       state: "Rajasthan",

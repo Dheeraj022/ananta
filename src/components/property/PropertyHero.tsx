@@ -55,9 +55,13 @@ export default function PropertyHero({ property }: PropertyHeroProps) {
             <span>{property.location.city}, Rajasthan</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-light tracking-tight leading-tight mb-6 sm:mb-8">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-light tracking-tight leading-tight mb-2 sm:mb-3">
             {property.name}
           </h1>
+
+          <p className="text-sm sm:text-base text-stone-200/90 font-light leading-relaxed mb-6 sm:mb-8 max-w-xl">
+            {property.heroIntro || `Welcome to ${property.name} — ${property.tagline}.`}
+          </p>
 
           {/* Action CTAs */}
           <div className="flex flex-wrap items-center gap-4">
