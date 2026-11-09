@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { properties } from "@/data/properties";
 import { siteConfig } from "@/data/site-config";
 import { useEnquiry } from "./EnquiryContext";
-import { CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { CheckCircle2, AlertCircle, Loader2, ChevronDown, ChevronUp } from "lucide-react";
 
 interface EnquiryFormProps {
   initialPropertySlug?: string;
@@ -42,15 +42,20 @@ export default function EnquiryForm({
     checkOut: initialCheckOut || ctxCheckOut || "",
     adults: initialAdults ?? ctxAdults ?? 2,
     specialRequests: "",
-    privacyAccepted: false,
+    privacyAccepted: true,
     honeypot: "",
   });
 
+  const [specialRequestsOpen, setSpecialRequestsOpen] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [referenceId, setReferenceId] = useState("");
   const [submitError, setSubmitError] = useState("");
+
+  // Derive dynamic accommodations based on selected property
+  const selectedProperty = properties.find((p) => p.slug === formData.propertySlug);
+  const availableAccommodations = selectedProperty?.accommodations || [];
 
   // Sync prop & context changes into form state
   useEffect(() => {
@@ -124,10 +129,6 @@ export default function EnquiryForm({
 
     if (formData.adults < 1) {
       errs.adults = "At least 1 adult is required.";
-    }
-
-    if (!formData.privacyAccepted) {
-      errs.privacyAccepted = "You must agree to the privacy terms to submit your enquiry.";
     }
 
     setErrors(errs);
@@ -257,8 +258,19 @@ export default function EnquiryForm({
           <div className="relative">
             <select
               value={formData.propertySlug}
-              onChange={(e) => setFormData({ ...formData, propertySlug: e.target.value })}
-              className={`w-full px-3.5 py-2.5 text-sm bg-white border rounded text-charcoal focus:outline-none focus:ring-1 focus:ring-forest ${
+              onChange={(e) => {
+                const newSlug = e.target.value;
+                const targetProp = properties.find((p) => p.slug === newSlug);
+                const validAccNames = targetProp?.accommodations.map((a) => a.name) || [];
+                setFormData((prev) => ({
+                  ...prev,
+                  propertySlug: newSlug,
+                  accommodationName: validAccNames.includes(prev.accommodationName)
+                    ? prev.accommodationName
+                    : "",
+                }));
+              }}
+              className={`w-full px-3.5 py-2.5 text-sm bg-white border rounded text-charcoal focus:outline-none focus:ring-1 focus:ring-forest cursor-pointer ${
                 errors.propertySlug ? "border-red-400 bg-red-50/30" : "border-stone-300"
               }`}
             >
@@ -279,13 +291,18 @@ export default function EnquiryForm({
             Selected Accommodation <span className="text-stone-400 font-normal">(Optional)</span>
           </label>
           <div className="relative">
-            <input
-              type="text"
+            <select
               value={formData.accommodationName}
               onChange={(e) => setFormData({ ...formData, accommodationName: e.target.value })}
-              placeholder="e.g. Luxury Villa, Tented Suite..."
-              className="w-full px-3.5 py-2.5 text-sm bg-white border border-stone-300 rounded text-charcoal focus:outline-none focus:ring-1 focus:ring-forest"
-            />
+              className="w-full px-3.5 py-2.5 text-sm bg-white border border-stone-300 rounded text-charcoal focus:outline-none focus:ring-1 focus:ring-forest cursor-pointer"
+            >
+              <option value="">Any / General Enquiry</option>
+              {availableAccommodations.map((acc) => (
+                <option key={acc.id} value={acc.name}>
+                  {acc.name} ({acc.category})
+                </option>
+              ))}
+            </select>
           </div>
         </div>
       </div>
@@ -393,54 +410,44 @@ export default function EnquiryForm({
         </div>
       </div>
 
-      {/* Special Requests */}
-      <div>
-        <label className="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1.5">
-          Special Requests or Questions <span className="text-stone-400 font-normal">(Optional)</span>
-        </label>
-        <textarea
-          rows={3}
-          value={formData.specialRequests}
-          onChange={(e) => setFormData({ ...formData, specialRequests: e.target.value })}
-          placeholder="e.g. High floor preference, airport transfer inquiry, celebratory occasion, specific villa location..."
-          className="w-full px-3.5 py-2.5 text-sm bg-white border border-stone-300 rounded text-charcoal focus:outline-none focus:ring-1 focus:ring-forest"
-        />
-      </div>
-
-      {/* Notice and Consent */}
-      <div className="space-y-3 pt-2">
-        <label className="flex items-start gap-2.5 text-xs text-stone-600 cursor-pointer">
-          <input
-            type="checkbox"
-            checked={formData.privacyAccepted}
-            onChange={(e) => setFormData({ ...formData, privacyAccepted: e.target.checked })}
-            className="mt-0.5 rounded border-stone-300 text-forest focus:ring-forest shrink-0"
-          />
-          <span>
-            I acknowledge that I am submitting an enquiry to an{" "}
-            <strong>independent travel partner</strong>, and I consent to being contacted regarding
-            this request in accordance with the{" "}
-            <a href="/privacy-policy" target="_blank" className="text-forest underline">
-              Privacy Policy
-            </a>
-            . <span className="text-red-500">*</span>
+      {/* Collapsible Special Requests (Courtyard Interaction Style) */}
+      <div className="border border-stone-200/80 rounded-lg bg-stone-50/50 p-3">
+        <button
+          type="button"
+          onClick={() => setSpecialRequestsOpen(!specialRequestsOpen)}
+          className="w-full flex items-center justify-between text-left text-xs font-semibold uppercase tracking-wider text-stone-700 hover:text-forest transition-colors py-1 cursor-pointer"
+          aria-expanded={specialRequestsOpen}
+        >
+          <span className="flex items-center gap-1.5">
+            <span>Special Requests and Questions</span>
+            <span className="text-stone-400 font-normal lowercase">(optional)</span>
           </span>
-        </label>
-        {errors.privacyAccepted && (
-          <p className="text-xs text-red-600 pl-6">{errors.privacyAccepted}</p>
-        )}
+          {specialRequestsOpen ? (
+            <ChevronUp className="w-4 h-4 text-stone-500" />
+          ) : (
+            <ChevronDown className="w-4 h-4 text-stone-500" />
+          )}
+        </button>
 
-        <div className="p-3 bg-stone-50 border border-stone-200/80 rounded text-[11px] leading-relaxed text-stone-500">
-          <strong>Notice:</strong> {siteConfig.bookingNotice}
-        </div>
+        {specialRequestsOpen && (
+          <div className="mt-2.5 pt-2 border-t border-stone-200/60">
+            <textarea
+              rows={3}
+              value={formData.specialRequests}
+              onChange={(e) => setFormData({ ...formData, specialRequests: e.target.value })}
+              placeholder="e.g. Dietary preferences, early arrival, airport transfer enquiry, celebratory occasion..."
+              className="w-full px-3.5 py-2.5 text-sm bg-white border border-stone-300 rounded text-charcoal focus:outline-none focus:ring-1 focus:ring-forest"
+            />
+          </div>
+        )}
       </div>
 
-      {/* Submit Button */}
-      <div className="pt-2">
+      {/* Submit Button & Disclaimer */}
+      <div className="pt-2 space-y-2">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full sm:w-auto px-8 py-3.5 bg-forest hover:bg-forest-hover text-white text-xs font-medium uppercase tracking-widest rounded shadow-sm transition-colors duration-200 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+          className="w-full sm:w-auto px-8 py-3.5 bg-forest hover:bg-forest-hover text-white text-xs font-medium uppercase tracking-widest rounded shadow-sm transition-colors duration-200 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer"
         >
           {isSubmitting ? (
             <>
@@ -451,6 +458,10 @@ export default function EnquiryForm({
             <span>Send Your Enquiry</span>
           )}
         </button>
+
+        <p className="text-xs text-stone-500 text-center sm:text-left">
+          Submitting an inquiry does not confirm a booking.
+        </p>
       </div>
     </form>
   );

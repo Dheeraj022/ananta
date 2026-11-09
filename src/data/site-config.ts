@@ -2,14 +2,16 @@ export const siteConfig = {
   name: "Guest-assist — Independent Travel Partner",
   shortTitle: "Guest-assist",
   brandName: "Guest-assist",
+  companyLegalName: "Hello My Trip Private Limited",
+  gstin: "07AAGCH6835F1ZI",
   description:
-    "Guest-assist is an independent travel partner helping travelers discover and submit stay enquiries for four premier Ananta hotel properties across Rajasthan: Udaipur, Pushkar, Ajabgarh, and Jaipur.",
+    "Guest-assist is an independent travel partner operated by Hello My Trip Private Limited, helping travelers discover and submit stay enquiries for four premier Ananta hotel properties across Rajasthan: Udaipur, Pushkar, Ajabgarh, and Jaipur.",
   partnerDisclosure:
-    "Guest-assist is an independent travel partner providing property information and assisting visitors with stay enquiries. We are not the official website of Ananta Hotels. Property names, descriptions, and images are used for identification and informational purposes. Enquiry submission does not confirm a booking or guarantee availability.",
+    "Guest-assist is operated by Hello My Trip Private Limited as an independent travel partner providing property details and stay enquiry assistance. We are not the official website of, or operated by, Ananta Hotels & Resorts. Enquiry submissions do not confirm or guarantee a booking.",
   shortDisclosure:
-    "Guest-assist • Independent Travel Partner • Property Discovery & Enquiry Concierge Only • Not the Official Ananta Hotels Website",
+    "Guest-assist • Hello My Trip Private Limited • Independent Travel Partner • Enquiry Concierge Only • Not the Official Ananta Hotels Website",
   bookingNotice:
-    "Submitting an enquiry does not confirm a booking or guarantee room availability. All requests are subject to confirmation through the relevant property or booking channel.",
+    "Submitting an enquiry does not confirm a booking.",
   contact: {
     phone: "+91 98765 43210 (Guest-assist Desk)",
     phoneRaw: "+919876543210",

@@ -49,7 +49,7 @@ export default function DisclaimerPage() {
             1. Independent Status & Non-Affiliation
           </h2>
           <p>
-            This website is owned and operated as an independent travel partner network. It is{" "}
+            This website is owned and operated by <strong>{siteConfig.companyLegalName}</strong> (GSTIN: {siteConfig.gstin}) as an independent travel partner network. It is{" "}
             <strong>not</strong> the official website of Ananta Hotels & Resorts, nor is it owned,
             managed, or operated by Ananta Hotels.
           </p>

@@ -45,18 +45,21 @@ export default function PartnerNotice({
   return (
     <aside
       aria-label="Independent Partner Disclosure"
-      className={`bg-[#F1E8D9] border-b border-[#DFCBB0] py-2.5 px-4 text-center text-[11px] md:text-xs text-charcoal tracking-wide font-normal ${className}`}
+      className={`bg-[#F1E8D9] border-b border-[#DFCBB0] py-1.5 px-3 text-[11px] text-charcoal tracking-tight font-normal leading-normal ${className}`}
     >
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
-        <span className="font-semibold text-forest uppercase tracking-wider text-[10px] sm:text-xs bg-white px-2 py-0.5 rounded border border-forest/20 shadow-sm">
-          Independent Travel Partner
+      <div className="max-w-7xl mx-auto flex items-center justify-center flex-nowrap gap-2 whitespace-nowrap overflow-hidden">
+        <span className="font-semibold text-forest uppercase tracking-wider text-[10px] bg-white px-2 py-0.5 rounded border border-forest/20 shadow-xs shrink-0">
+          Independent Partner
         </span>
-        <span className="text-stone-800">
-          Property discovery & enquiry concierge. We are not the official website of Ananta Hotels.
+        <span className="text-stone-800 shrink-0">
+          Operated by <strong>{siteConfig.companyLegalName}</strong> • Enquiry concierge only • Not the official website of Ananta Hotels
+        </span>
+        <span className="hidden lg:inline-flex items-center text-[10px] font-mono text-stone-700 font-medium px-2 py-0.5 rounded bg-white/80 border border-[#DFCBB0] shrink-0">
+          GSTIN: {siteConfig.gstin}
         </span>
         <a
           href="/disclaimer"
-          className="text-forest hover:text-forest-dark font-medium underline underline-offset-2 ml-1"
+          className="text-forest hover:text-forest-dark font-medium underline underline-offset-2 shrink-0 ml-0.5"
         >
           Read Disclosure
         </a>

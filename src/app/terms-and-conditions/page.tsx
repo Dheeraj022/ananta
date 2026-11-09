@@ -48,7 +48,7 @@ export default function TermsPage() {
             2. Scope of Service — Enquiry Only
           </h2>
           <p>
-            This website provides an informational guide and enquiry conduit for four selected
+            This website is operated by <strong>{siteConfig.companyLegalName}</strong> as an independent informational guide and enquiry conduit for four selected
             Ananta resort properties located in Rajasthan (The Ananta Udaipur, Ananta Spa & Resort
             Pushkar, Ananta Spa & Resort Ajabgarh, and Ananta Spa & Resort Jaipur).
           </p>

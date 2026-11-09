@@ -35,13 +35,6 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!privacyAccepted) {
-      return NextResponse.json(
-        { success: false, message: "You must accept the privacy policy to submit an enquiry." },
-        { status: 400 }
-      );
-    }
-
     // Email format validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {

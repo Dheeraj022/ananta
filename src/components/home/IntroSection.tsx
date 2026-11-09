@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeading from "../common/SectionHeading";
 import PartnerNotice from "../common/PartnerNotice";
+import { siteConfig } from "@/data/site-config";
 import { Compass, Sparkles, Building2, HelpCircle } from "lucide-react";
 
 export default function IntroSection() {
@@ -9,7 +10,7 @@ export default function IntroSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Main Editorial Text */}
-          <div className="lg:col-span-7 space-y-6">
+          <div className="w-full lg:col-span-7 space-y-6">
             <SectionHeading
               eyebrow="Independent Hospitality Partner"
               title="A Curated Gateway to Rajasthan's Ananta Stays"
@@ -18,7 +19,7 @@ export default function IntroSection() {
             />
 
             <p className="text-base text-stone-700 leading-relaxed font-light">
-              At <strong>Guest-assist</strong>, we operate as an independent travel partner focused on helping travelers discover and
+              At <strong>Guest-assist</strong> (operated by <strong>{siteConfig.companyLegalName}</strong>), we operate as an independent travel partner focused on helping travelers discover and
               plan stays across four distinguished Ananta hotel properties in Rajasthan. Whether
               you seek the verdant tranquility of Udaipur, the spiritual serenity of Pushkar, the
               secluded valleys of Ajabgarh, or the royal architecture of Jaipur, our platform
@@ -36,8 +37,8 @@ export default function IntroSection() {
             </div>
           </div>
 
-          {/* Partner Service Highlights */}
-          <div className="lg:col-span-5 bg-sand-cream/60 p-8 rounded-xl border border-sand space-y-6">
+          {/* Partner Service Highlights - Visible on Desktop/Laptop only; moved to About Us for mobile */}
+          <div className="hidden lg:block lg:col-span-5 bg-sand-cream/60 p-8 rounded-xl border border-sand space-y-6">
             <h3 className="font-serif text-xl font-medium text-charcoal border-b border-sand pb-3">
               How Our Service Assists You
             </h3>

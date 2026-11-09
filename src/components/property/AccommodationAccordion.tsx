@@ -122,37 +122,26 @@ export default function AccommodationAccordion({
                 {acc.description}
               </p>
 
-              {/* Key Features */}
-              {acc.features && acc.features.length > 0 && (
-                <div className="pt-2 border-t border-stone-100">
-                  <div className="text-[11px] uppercase tracking-wider text-stone-500 font-semibold mb-2">
-                    Key Features
-                  </div>
-                  <ul className="space-y-1.5 text-xs text-stone-700">
-                    {acc.features.map((feat, fIdx) => (
-                      <li key={fIdx} className="flex items-start gap-2">
-                        <Check className="w-3.5 h-3.5 text-forest shrink-0 mt-0.5" />
-                        <span>{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              {/* Amenities */}
+              {/* Amenities & Add-ons (Mobile Accordion Drawer) */}
               {acc.amenities && acc.amenities.length > 0 && (
-                <div className="pt-2 border-t border-stone-100">
-                  <div className="text-[11px] uppercase tracking-wider text-stone-500 font-semibold mb-2">
-                    Amenities
+                <div className="pt-2 border-t border-stone-100 space-y-2">
+                  <div>
+                    <div className="text-[11px] uppercase tracking-wider text-stone-500 font-semibold">
+                      Amenities &amp; Add-ons
+                    </div>
+                    <p className="text-[11px] text-stone-500 leading-relaxed mt-0.5">
+                      Verified room comforts and resort inclusions. Special add-ons and dining plans can be arranged upon enquiry.
+                    </p>
                   </div>
-                  <div className="flex flex-wrap gap-1.5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
                     {acc.amenities.map((item, aIdx) => (
-                      <span
+                      <div
                         key={aIdx}
-                        className="text-[10px] px-2 py-0.5 bg-sand-cream rounded text-stone-700 border border-sand"
+                        className="flex items-center gap-1.5 p-1.5 rounded bg-sand-cream/40 border border-sand/70 text-[11px] text-stone-700"
                       >
-                        {item}
-                      </span>
+                        <Check className="w-3 h-3 text-forest shrink-0" />
+                        <span className="truncate">{item}</span>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -310,37 +299,27 @@ export default function AccommodationAccordion({
                 </p>
               </div>
 
-              {/* Room Highlights / Features */}
-              {activeAcc.features && activeAcc.features.length > 0 && (
-                <div>
-                  <h4 className="text-xs uppercase tracking-wider text-stone-500 font-semibold mb-2">
-                    Key Room Features
-                  </h4>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-stone-700">
-                    {activeAcc.features.map((feat, fIdx) => (
-                      <li key={fIdx} className="flex items-start gap-2">
-                        <Check className="w-3.5 h-3.5 text-forest shrink-0 mt-0.5" />
-                        <span>{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              {/* Room Amenities Pills */}
+              {/* Amenities & Add-ons Section */}
               {activeAcc.amenities && activeAcc.amenities.length > 0 && (
-                <div>
-                  <h4 className="text-xs uppercase tracking-wider text-stone-500 font-semibold mb-2">
-                    Room Amenities
-                  </h4>
-                  <div className="flex flex-wrap gap-1.5">
+                <div className="space-y-3 pt-2 border-t border-stone-100">
+                  <div>
+                    <h4 className="text-xs uppercase tracking-wider text-stone-500 font-semibold mb-1">
+                      Amenities &amp; Add-ons
+                    </h4>
+                    <p className="text-xs text-stone-500 leading-relaxed">
+                      Each room includes verified resort amenities and essential comforts. Stay add-ons and customized preferences can be tailored upon enquiry.
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-xs text-stone-700">
                     {activeAcc.amenities.map((item, aIdx) => (
-                      <span
+                      <div
                         key={aIdx}
-                        className="text-[11px] px-2.5 py-1 bg-sand-cream rounded text-stone-700 border border-sand"
+                        className="flex items-center gap-2 p-2 rounded bg-sand-cream/40 border border-sand/70"
                       >
-                        {item}
-                      </span>
+                        <Check className="w-3.5 h-3.5 text-forest shrink-0" />
+                        <span className="leading-tight">{item}</span>
+                      </div>
                     ))}
                   </div>
                 </div>

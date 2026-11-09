@@ -21,13 +21,16 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs text-stone-400 leading-relaxed max-w-sm">
-              Guest-assist is an independent travel partner helping discerning travelers discover and submit stay
+              Guest-assist is operated by <strong>{siteConfig.companyLegalName}</strong> as an independent travel partner helping discerning travelers discover and submit stay
               enquiries for four exceptional Ananta resort properties across Rajasthan.
             </p>
-            <div className="pt-2">
+            <div className="pt-2 flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-stone-800/80 border border-stone-700/60 text-[10px] uppercase tracking-wider text-stone-300">
                 <ShieldCheck className="w-3.5 h-3.5 text-gold" />
                 <span>Independent Travel Partner Desk</span>
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-stone-800/80 border border-stone-700/60 text-[10px] font-mono tracking-wider text-gold">
+                <span>GSTIN: {siteConfig.gstin}</span>
               </span>
             </div>
           </div>
@@ -155,12 +158,21 @@ export default function Footer() {
         <div className="py-8 my-6 bg-charcoal-dark border border-stone-800 rounded-lg p-5">
           <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
             <div className="space-y-1.5 max-w-4xl">
-              <div className="text-[10px] uppercase tracking-widest text-gold font-semibold">
-                Mandatory Legal Disclosure
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-[10px] uppercase tracking-widest text-gold font-semibold">
+                  Mandatory Legal Disclosure
+                </span>
+                <span className="text-stone-600">•</span>
+                <span className="text-[10px] uppercase tracking-wider text-stone-400 font-mono">
+                  GSTIN: {siteConfig.gstin}
+                </span>
               </div>
               <p className="text-xs text-stone-300 leading-relaxed">
                 {siteConfig.partnerDisclosure}
               </p>
+              <div className="text-[11px] text-stone-400 pt-1">
+                Official Entity: <strong className="text-stone-200">{siteConfig.companyLegalName}</strong>
+              </div>
             </div>
             <Link
               href="/disclaimer"
@@ -174,7 +186,7 @@ export default function Footer() {
         {/* Bottom Bar: Copyright & Legal Links */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
           <div>
-            © {new Date().getFullYear()} Independent Travel Partner Network. All rights reserved.
+            © {new Date().getFullYear()} {siteConfig.companyLegalName}. All rights reserved.
           </div>
           <div className="flex items-center space-x-6">
             <Link href="/privacy-policy" className="hover:text-stone-300 transition-colors">

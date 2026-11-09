@@ -20,14 +20,6 @@ export default function HomeEnquirySection() {
               className="mb-6"
             />
 
-            <div className="space-y-4 text-xs text-stone-600 leading-relaxed">
-              <p>
-                Whether you are organizing a tranquil family retreat, a weekend wellness getaway,
-                or exploring group villa bookings, our independent concierge team assists with room
-                guidance and coordinates with the respective property.
-              </p>
-            </div>
-
             {/* Concierge details */}
             <div className="p-6 bg-white rounded-lg border border-sand space-y-4 shadow-sm">
               <div className="text-xs uppercase tracking-wider font-semibold text-charcoal border-b border-stone-100 pb-2 flex items-center gap-1.5">

@@ -20,6 +20,8 @@ import {
   ArrowRight,
   Sparkles,
   AlertTriangle,
+  HelpCircle,
+  Building2,
 } from "lucide-react";
 
 const processSteps = [
@@ -165,7 +167,7 @@ export default function AboutContent() {
 
             <div className="space-y-4 text-stone-700 text-sm sm:text-base leading-relaxed font-light">
               <p>
-                <strong>Guest-assist</strong> operates as an independent travel partner focused on helping
+                <strong>Guest-assist</strong> is operated by <strong>{siteConfig.companyLegalName}</strong> as an independent travel partner focused on helping
                 travelers discover and plan stays across premier Ananta hotel properties in Rajasthan:
                 <strong> The Ananta Udaipur</strong>, <strong>Ananta Spa &amp; Resort Pushkar</strong>,{" "}
                 <strong>Ananta Spa &amp; Resort Ajabgarh</strong>, and{" "}
@@ -187,7 +189,7 @@ export default function AboutContent() {
             <div className="p-4 sm:p-5 bg-amber-50/70 border border-amber-200/90 rounded-xl flex items-start gap-3 text-xs sm:text-sm text-amber-950 leading-relaxed">
               <Info className="w-5 h-5 text-amber-800 shrink-0 mt-0.5" />
               <div>
-                <span className="font-semibold">Important Notice:</span> Guest-assist is an independent
+                <span className="font-semibold">Important Notice:</span> Guest-assist is operated by <strong>{siteConfig.companyLegalName}</strong> as an independent
                 travel partner. We are not the owner, operator, or official representative of Ananta
                 Hotels &amp; Resorts. We do not process live bookings or take advance payments on this
                 website.
@@ -207,6 +209,61 @@ export default function AboutContent() {
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-forest shrink-0" />
                 <span>Transparent Communication</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HOW OUR SERVICES ASSIST YOU */}
+      <section className="py-14 bg-white border-b border-sand">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-sand-cream/60 p-6 sm:p-10 rounded-2xl border border-sand space-y-6">
+            <h3 className="font-serif text-2xl font-medium text-charcoal border-b border-sand pb-3">
+              How Our Services Assist You
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+              <div className="flex items-start gap-3.5">
+                <div className="w-9 h-9 rounded-full bg-forest-surface text-forest flex items-center justify-center shrink-0 border border-forest/20 mt-0.5">
+                  <Compass className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs uppercase tracking-wider font-semibold text-charcoal">
+                    Multi-Property Discovery
+                  </h4>
+                  <p className="text-xs text-stone-600 leading-relaxed mt-1">
+                    Explore verified room types, amenities, and landscapes across all 4 resorts in one place.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3.5">
+                <div className="w-9 h-9 rounded-full bg-forest-surface text-forest flex items-center justify-center shrink-0 border border-forest/20 mt-0.5">
+                  <HelpCircle className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs uppercase tracking-wider font-semibold text-charcoal">
+                    Enquiry Assistance
+                  </h4>
+                  <p className="text-xs text-stone-600 leading-relaxed mt-1">
+                    We review your dates and room preferences to guide your enquiry to the relevant property desk.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3.5">
+                <div className="w-9 h-9 rounded-full bg-forest-surface text-forest flex items-center justify-center shrink-0 border border-forest/20 mt-0.5">
+                  <Building2 className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs uppercase tracking-wider font-semibold text-charcoal">
+                    Transparent Communication
+                  </h4>
+                  <p className="text-xs text-stone-600 leading-relaxed mt-1">
+                    Clear guidance on resort details with no hidden fees or inflated promises.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -338,7 +395,7 @@ export default function AboutContent() {
             </div>
 
             <div className="space-y-2 text-stone-700 text-sm sm:text-base leading-relaxed">
-              <p>Guest-assist is operated by an independent travel agency.</p>
+              <p>Guest-assist is operated by <strong>{siteConfig.companyLegalName}</strong>, an independent travel partner.</p>
               <p className="text-stone-600">
                 We provide general property information, guidance and enquiry assistance.
               </p>
