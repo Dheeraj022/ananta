@@ -18,6 +18,7 @@ import {
 
 interface AmenitiesGridProps {
   amenities: Amenity[];
+  className?: string;
 }
 
 const iconDict: Record<string, React.ReactNode> = {
@@ -34,9 +35,9 @@ const iconDict: Record<string, React.ReactNode> = {
   Utensils: <Utensils className="w-5 h-5" />,
 };
 
-export default function AmenitiesGrid({ amenities }: AmenitiesGridProps) {
+export default function AmenitiesGrid({ amenities, className = "" }: AmenitiesGridProps) {
   return (
-    <section className="py-16 bg-sand-cream/50 border-y border-sand">
+    <section className={`py-16 bg-sand-cream/50 border-y border-sand ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Resort Facilities"

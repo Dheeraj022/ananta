@@ -67,8 +67,8 @@ export default function PropertyPage({ params, searchParams }: PropertyPageProps
       {/* 4 & 6: Property Overview, Information & Highlights */}
       <PropertyOverview property={property} />
 
-      {/* 5: Key Facilities and Amenities */}
-      <AmenitiesGrid amenities={property.amenities} />
+      {/* 5: Key Facilities and Amenities (Desktop view: above accommodations) */}
+      <AmenitiesGrid amenities={property.amenities} className="hidden md:block" />
 
       {/* 7: Accommodation Section — Aamby Valley Style Accordion */}
       <section id="accommodations" className="py-20 bg-sand-light/50 scroll-mt-20 border-b border-sand">
@@ -86,6 +86,9 @@ export default function PropertyPage({ params, searchParams }: PropertyPageProps
           />
         </div>
       </section>
+
+      {/* 5: Key Facilities and Amenities (Mobile only: positioned just below accommodations) */}
+      <AmenitiesGrid amenities={property.amenities} className="block md:hidden" />
 
       {/* 8: Location Information & Dining */}
       <LocationSection property={property} />
