@@ -3,8 +3,7 @@
 import React, { useEffect } from "react";
 import { useEnquiry } from "./EnquiryContext";
 import EnquiryForm from "./EnquiryForm";
-import { X, ShieldAlert } from "lucide-react";
-import { siteConfig } from "@/data/site-config";
+import { X } from "lucide-react";
 
 export default function EnquiryModal() {
   const { isOpen, closeEnquiry, propertySlug, accommodationName } = useEnquiry();
@@ -66,14 +65,6 @@ export default function EnquiryModal() {
 
         {/* Content Body */}
         <div className="p-6 md:p-8">
-          <div className="mb-6 p-3 bg-amber-50/70 border border-amber-200/70 rounded text-xs text-amber-900 flex items-start gap-2.5">
-            <ShieldAlert className="w-4 h-4 shrink-0 text-amber-700 mt-0.5" />
-            <span className="leading-relaxed">
-              <strong>Independent Partner Notice:</strong> {siteConfig.shortDisclosure}.
-              Submissions assist in retreat coordination and do not confirm immediate reservations.
-            </span>
-          </div>
-
           <EnquiryForm
             isModal={true}
             initialPropertySlug={propertySlug}

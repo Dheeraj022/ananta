@@ -1,8 +1,7 @@
 import React from "react";
 import SectionHeading from "../common/SectionHeading";
-import PartnerNotice from "../common/PartnerNotice";
 import { siteConfig } from "@/data/site-config";
-import { Compass, Sparkles, Building2, HelpCircle } from "lucide-react";
+import { Compass, Building2, HelpCircle } from "lucide-react";
 
 export default function IntroSection() {
   return (
@@ -31,10 +30,6 @@ export default function IntroSection() {
               arrangements, and desired room categories before your request is routed through the
               appropriate resort channels.
             </p>
-
-            <div className="pt-2">
-              <PartnerNotice variant="inline" />
-            </div>
           </div>
 
           {/* Partner Service Highlights - Visible on Desktop/Laptop only; moved to About Us for mobile */}

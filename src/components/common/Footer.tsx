@@ -171,7 +171,7 @@ export default function Footer() {
                 {siteConfig.partnerDisclosure}
               </p>
               <div className="text-[11px] text-stone-400 pt-1">
-                Official Entity: <strong className="text-stone-200">{siteConfig.companyLegalName}</strong>
+                Official Entity: <strong className="text-stone-200">{siteConfig.companyLegalName}</strong> • Registered Address: <span className="text-stone-300">{siteConfig.companyAddress}</span>
               </div>
             </div>
             <Link

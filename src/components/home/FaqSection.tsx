@@ -2,9 +2,7 @@
 
 import React, { useState } from "react";
 import SectionHeading from "../common/SectionHeading";
-import { ChevronDown, HelpCircle, PhoneCall, Mail } from "lucide-react";
-import { siteConfig } from "@/data/site-config";
-import { useEnquiry } from "../enquiry/EnquiryContext";
+import { ChevronDown } from "lucide-react";
 
 interface FaqItem {
   question: string;
@@ -51,7 +49,6 @@ const faqs: FaqItem[] = [
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const { openEnquiry } = useEnquiry();
 
   const toggleIndex = (idx: number) => {
     setOpenIndex((prev) => (prev === idx ? null : idx));
@@ -101,35 +98,6 @@ export default function FaqSection() {
               </div>
             );
           })}
-        </div>
-
-        {/* Have More Questions CTA Card */}
-        <div className="mt-12 p-6 bg-white rounded-xl border border-sand text-center space-y-3 shadow-sm">
-          <div className="w-10 h-10 rounded-full bg-forest-surface text-forest mx-auto flex items-center justify-center border border-forest/15">
-            <HelpCircle className="w-5 h-5" />
-          </div>
-          <h4 className="font-serif text-lg font-medium text-charcoal">
-            Have a question not listed here?
-          </h4>
-          <p className="text-xs text-stone-600 max-w-md mx-auto">
-            Our concierge team is available to assist with resort information, date feasibility, or special stay requirements.
-          </p>
-          <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
-            <button
-              type="button"
-              onClick={() => openEnquiry()}
-              className="px-5 py-2.5 bg-forest hover:bg-forest-hover text-white text-xs font-medium uppercase tracking-wider rounded transition-colors"
-            >
-              Ask Our Concierge
-            </button>
-            <a
-              href={`tel:${siteConfig.contact.phoneRaw}`}
-              className="px-5 py-2.5 bg-sand-cream text-charcoal hover:bg-sand-warm text-xs font-medium uppercase tracking-wider rounded border border-sand transition-colors flex items-center gap-1.5"
-            >
-              <PhoneCall className="w-3.5 h-3.5 text-forest" />
-              <span>Call Helpline</span>
-            </a>
-          </div>
         </div>
       </div>
     </section>

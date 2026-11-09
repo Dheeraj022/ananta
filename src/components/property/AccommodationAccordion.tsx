@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Accommodation } from "@/types/property";
 import RoomImageCarousel from "./RoomImageCarousel";
 import { useEnquiry } from "../enquiry/EnquiryContext";
+import { STANDARD_ROOM_AMENITIES } from "@/data/properties";
 import {
   Maximize2,
   Users,
@@ -13,7 +14,114 @@ import {
   CalendarCheck,
   ChevronLeft,
   ChevronRight,
+  ChevronDown,
 } from "lucide-react";
+
+/**
+ * Mobile Accommodation Overview with a 2-line clamp and Read More / Show Less toggle
+ */
+function MobileOverviewSection({ description }: { description: string }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const isLong = Boolean(description && description.length > 90);
+
+  return (
+    <div className="space-y-1">
+      <h4 className="text-[11px] uppercase tracking-wider text-stone-500 font-semibold">
+        Accommodation Overview
+      </h4>
+      <p
+        className={`text-stone-700 text-xs sm:text-sm leading-relaxed font-light ${
+          !isExpanded ? "line-clamp-2" : ""
+        }`}
+      >
+        {description}
+      </p>
+      {isLong && (
+        <button
+          type="button"
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="inline-flex items-center gap-1 text-[11px] font-semibold text-forest hover:text-forest-dark uppercase tracking-wider transition-colors pt-0.5"
+        >
+          <span>{isExpanded ? "Show Less" : "Read More"}</span>
+          <ChevronDown
+            className={`w-3 h-3 transition-transform duration-200 ${
+              isExpanded ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Reusable Amenities Section displaying 4 items initially with a Read More / Show Less toggle
+ */
+function RoomAmenitiesSection({
+  amenities,
+  isMobile = false,
+}: {
+  amenities?: string[];
+  isMobile?: boolean;
+}) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const items = amenities && amenities.length > 0 ? amenities : STANDARD_ROOM_AMENITIES;
+  const displayedItems = isExpanded ? items : items.slice(0, 4);
+
+  return (
+    <div className={`border-t border-stone-100 ${isMobile ? "pt-2 space-y-2" : "pt-3 space-y-3"}`}>
+      <div>
+        <h4
+          className={`${
+            isMobile ? "text-[11px]" : "text-xs"
+          } uppercase tracking-wider text-stone-500 font-semibold mb-1`}
+        >
+          Amenities
+        </h4>
+        <p className={`${isMobile ? "text-[11px]" : "text-xs"} text-stone-500 leading-relaxed`}>
+          Each room includes verified resort amenities and essential comforts. Stay add-ons and customized preferences can be tailored upon enquiry.
+        </p>
+      </div>
+
+      <div
+        className={`grid ${
+          isMobile
+            ? "grid-cols-1 sm:grid-cols-2 gap-1.5"
+            : "grid-cols-1 sm:grid-cols-2 gap-2"
+        } text-xs text-stone-700`}
+      >
+        {displayedItems.map((item, aIdx) => (
+          <div
+            key={aIdx}
+            className={`flex items-center gap-2 p-2 rounded bg-sand-cream/40 border border-sand/70 ${
+              isMobile ? "text-[11px]" : "text-xs"
+            }`}
+          >
+            <Check className={`${isMobile ? "w-3 h-3" : "w-3.5 h-3.5"} text-forest shrink-0`} />
+            <span className="leading-tight">{item}</span>
+          </div>
+        ))}
+      </div>
+
+      {items.length > 4 && (
+        <button
+          type="button"
+          onClick={() => setIsExpanded(!isExpanded)}
+          className={`inline-flex items-center gap-1.5 font-semibold text-forest hover:text-forest-dark uppercase tracking-wider transition-colors pt-1 ${
+            isMobile ? "text-[11px]" : "text-xs"
+          }`}
+        >
+          <span>{isExpanded ? "Show Less" : "Read More"}</span>
+          <ChevronDown
+            className={`w-3.5 h-3.5 transition-transform duration-200 ${
+              isExpanded ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+      )}
+    </div>
+  );
+}
 
 interface AccommodationAccordionProps {
   propertySlug: string;
@@ -117,35 +225,11 @@ export default function AccommodationAccordion({
                 </div>
               </div>
 
-              {/* Description */}
-              <p className="text-stone-700 text-xs sm:text-sm leading-relaxed font-light">
-                {acc.description}
-              </p>
+              {/* Accommodation Overview (Mobile with 2-line clamp & toggle) */}
+              <MobileOverviewSection description={acc.description} />
 
-              {/* Amenities & Add-ons (Mobile Accordion Drawer) */}
-              {acc.amenities && acc.amenities.length > 0 && (
-                <div className="pt-2 border-t border-stone-100 space-y-2">
-                  <div>
-                    <div className="text-[11px] uppercase tracking-wider text-stone-500 font-semibold">
-                      Amenities &amp; Add-ons
-                    </div>
-                    <p className="text-[11px] text-stone-500 leading-relaxed mt-0.5">
-                      Verified room comforts and resort inclusions. Special add-ons and dining plans can be arranged upon enquiry.
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
-                    {acc.amenities.map((item, aIdx) => (
-                      <div
-                        key={aIdx}
-                        className="flex items-center gap-1.5 p-1.5 rounded bg-sand-cream/40 border border-sand/70 text-[11px] text-stone-700"
-                      >
-                        <Check className="w-3 h-3 text-forest shrink-0" />
-                        <span className="truncate">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+              {/* Amenities Section (Mobile with 4 items & Read More toggle) */}
+              <RoomAmenitiesSection amenities={acc.amenities} isMobile={true} />
 
               {/* Direct Enquiry Button */}
               <div className="pt-3 border-t border-stone-200">
@@ -299,31 +383,8 @@ export default function AccommodationAccordion({
                 </p>
               </div>
 
-              {/* Amenities & Add-ons Section */}
-              {activeAcc.amenities && activeAcc.amenities.length > 0 && (
-                <div className="space-y-3 pt-2 border-t border-stone-100">
-                  <div>
-                    <h4 className="text-xs uppercase tracking-wider text-stone-500 font-semibold mb-1">
-                      Amenities &amp; Add-ons
-                    </h4>
-                    <p className="text-xs text-stone-500 leading-relaxed">
-                      Each room includes verified resort amenities and essential comforts. Stay add-ons and customized preferences can be tailored upon enquiry.
-                    </p>
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-xs text-stone-700">
-                    {activeAcc.amenities.map((item, aIdx) => (
-                      <div
-                        key={aIdx}
-                        className="flex items-center gap-2 p-2 rounded bg-sand-cream/40 border border-sand/70"
-                      >
-                        <Check className="w-3.5 h-3.5 text-forest shrink-0" />
-                        <span className="leading-tight">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+              {/* Amenities Section (Desktop with 4 items & Read More toggle) */}
+              <RoomAmenitiesSection amenities={activeAcc.amenities} isMobile={false} />
 
               {/* Direct Room Enquiry CTA Box */}
               <div className="pt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-t border-stone-200">

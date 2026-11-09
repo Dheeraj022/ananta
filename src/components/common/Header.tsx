@@ -189,6 +189,7 @@ export default function Header() {
           <div className="lg:hidden bg-white border-t border-stone-200 px-5 pt-3 pb-6 space-y-4 shadow-lg animate-in fade-in slide-in-from-top-2 duration-200">
             <Link
               href="/"
+              onClick={() => setMobileMenuOpen(false)}
               className="block py-2 text-sm font-medium text-stone-800 hover:text-forest border-b border-stone-100"
             >
               Home
@@ -203,6 +204,7 @@ export default function Header() {
                   <Link
                     key={prop.slug}
                     href={`/properties/${prop.slug}`}
+                    onClick={() => setMobileMenuOpen(false)}
                     className="block text-sm text-stone-700 hover:text-forest py-1 font-serif"
                   >
                     {prop.name}
@@ -215,35 +217,8 @@ export default function Header() {
             </div>
 
             <Link
-              href="/#amenities"
-              className="block py-2 text-sm font-medium text-stone-800 hover:text-forest border-b border-stone-100"
-            >
-              Amenities at Ananta
-            </Link>
-
-            <Link
-              href="/#how-it-works"
-              className="block py-2 text-sm font-medium text-stone-800 hover:text-forest border-b border-stone-100"
-            >
-              How It Works
-            </Link>
-
-            <Link
-              href="/#faq"
-              className="block py-2 text-sm font-medium text-stone-800 hover:text-forest border-b border-stone-100"
-            >
-              Frequently Asked Questions
-            </Link>
-
-            <Link
-              href="/#our-role"
-              className="block py-2 text-sm font-medium text-stone-800 hover:text-forest border-b border-stone-100"
-            >
-              Our Role & Independence
-            </Link>
-
-            <Link
               href="/about"
+              onClick={() => setMobileMenuOpen(false)}
               className="block py-2 text-sm font-medium text-stone-800 hover:text-forest border-b border-stone-100"
             >
               About Us
@@ -251,6 +226,7 @@ export default function Header() {
 
             <Link
               href="/contact"
+              onClick={() => setMobileMenuOpen(false)}
               className="block py-2 text-sm font-medium text-stone-800 hover:text-forest border-b border-stone-100"
             >
               Contact Us

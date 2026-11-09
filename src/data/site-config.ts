@@ -3,6 +3,7 @@ export const siteConfig = {
   shortTitle: "Guest-assist",
   brandName: "Guest-assist",
   companyLegalName: "Hello My Trip Private Limited",
+  companyAddress: "BASEMENT, 159-C, New Friends Colony, Sarai Jullena, New Delhi, South East Delhi, Delhi, 110025",
   gstin: "07AAGCH6835F1ZI",
   description:
     "Guest-assist is an independent travel partner operated by Hello My Trip Private Limited, helping travelers discover and submit stay enquiries for four premier Ananta hotel properties across Rajasthan: Udaipur, Pushkar, Ajabgarh, and Jaipur.",
@@ -17,8 +18,7 @@ export const siteConfig = {
     phoneRaw: "+919876543210",
     email: "info@guest-assist.com",
     hours: "Monday – Saturday: 9:00 AM – 8:00 PM IST",
-    address: "Guest-assist Operations Desk, Travel Partner Network, Rajasthan, India",
-    isPlaceholder: true, // Marked for client verification
+    address: "BASEMENT, 159-C, New Friends Colony, Sarai Jullena, New Delhi, South East Delhi, Delhi, 110025",
   },
   navigation: [
     { label: "Home", href: "/" },
