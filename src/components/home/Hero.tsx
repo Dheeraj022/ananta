@@ -63,13 +63,13 @@ export default function Hero() {
     }
   };
 
-  // Subtle auto-rotation
+  // Auto-rotation every 5 seconds (resets on manual interaction)
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 7000);
+    }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [currentSlide]);
 
   const scrollToProperties = () => {
     const el = document.getElementById("properties");
