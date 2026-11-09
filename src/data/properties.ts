@@ -104,8 +104,9 @@ export const properties: Property[] = [
         bedType: "King-size Bed or Twin Beds",
         view: "Panoramic Mountain & Valley View",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3334/x_0,y_261,w_5000,h_2812,r_0,c_crop,q_80,fl_progressive/w_900,f_auto,c_fit/the-ananta-udaipur/Ananta_Udaipur_Sep22_Day_03_Golf_Suite_0165-HDR_w5re8z",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/the-ananta-udaipur/Open_to_sky_bathroom_featured_in_our_executive_suite_in_Udaipur_6881",
+          "/Ananta Photos/Udaipur/Luxury Cottage/Ananta_Udaipur_Fotowalah-25_ulgb9q.webp",
+          "/Ananta Photos/Udaipur/Luxury Cottage/Luxury_Villa_Bed_Room_(Photo-2).webp",
+          "/Ananta Photos/Udaipur/Luxury Cottage/Ananta_Udaipur_Fotowalah-36_ucdcjn.webp",
         ],
         description:
           "Perched at higher elevations across the 40-acre estate to capture panoramic vistas of the rolling Aravalli range, these Balinese-inspired standalone cottages feature a private balcony, contemporary wooden accents, and The Ananta's signature open-to-sky cubicle shower.",
@@ -127,8 +128,9 @@ export const properties: Property[] = [
         bedType: "King-size Bed",
         view: "Lush Hillside Greenery & Valley View",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3334/x_833,y_0,w_3334,h_3334,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/the-ananta-udaipur/Deluxe_Room_1_adv7ks",
-          "https://assets.simplotel.com/simplotel/image/upload/x_0,y_74,w_2400,h_1350,r_0,c_crop,q_80,fl_progressive/w_900,f_auto,c_fit/the-ananta-udaipur/Outdoor_seating_with_umbrellas_and_tables_at_our_resort_in_Udaipur_",
+          "/Ananta Photos/Udaipur/Premium Wooden Cottage with Bathtub/Room1_9_51c23ea1.webp",
+          "/Ananta Photos/Udaipur/Premium Wooden Cottage with Bathtub/Room_9_1cb899d2.webp",
+          "/Ananta Photos/Udaipur/Premium Wooden Cottage with Bathtub/Washroom_with_bathtub_9_2de0a58b.webp",
         ],
         description:
           "Crafted for travelers desiring warm, woodsy elegance, these premium wooden chalets feature vaulted timber ceilings, inviting rustic interiors, a private viewing balcony, and a relaxing en-suite bathtub for personal rejuvenation amidst nature.",
@@ -150,8 +152,9 @@ export const properties: Property[] = [
         bedType: "Master King Bed",
         view: "Elevated Aravalli Hills & Valley Panorama",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/the-ananta-udaipur/Executive_Suite_aebgh8",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/the-ananta-udaipur/Open_to_sky_bathroom_featured_in_our_executive_suite_in_Udaipur_6881",
+          "/Ananta Photos/Udaipur/Executive Suites/Executive_Suite_Bedroom_(Photo-2).jpg",
+          "/Ananta Photos/Udaipur/Executive Suites/Executive_suite4_qolqtm.jpg",
+          "/Ananta Photos/Udaipur/Executive Suites/Executive_suite2_gqmguo.jpg",
         ],
         description:
           "Spanning 1,080 sq. ft., the Executive Suite provides generous space for relaxation with an independent living salon, designated dining area, private balcony, and signature open-to-sky cubicle shower framing views of the Aravalli range.",
@@ -173,8 +176,9 @@ export const properties: Property[] = [
         bedType: "2 Bedrooms (Master King Bed + Twin Beds)",
         view: "Scenic Valley & Landscaped Grounds",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3334/x_0,y_261,w_5000,h_2812,r_0,c_crop,q_80,fl_progressive/w_900,f_auto,c_fit/the-ananta-udaipur/Ananta_Udaipur_Sep22_Day_03_Golf_Suite_0165-HDR_w5re8z",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/the-ananta-udaipur/Executive_Suite_aebgh8",
+          "/Ananta Photos/Udaipur/Grand Suites/Grand_Suite_Bedroom_(Photo-4).jpg",
+          "/Ananta Photos/Udaipur/Grand Suites/Grand_Suite_Bedroom_(Photo-2)_2.jpg",
+          "/Ananta Photos/Udaipur/Grand Suites/Grand_Suite_Living_Room_ijapym.webp",
         ],
         description:
           "Tailored for families and group stays, Grand Suites feature two separate, elegantly appointed bedrooms along with an expansive central living room, multiple private balconies, and modern en-suite bathrooms with cubical showers.",
@@ -196,8 +200,9 @@ export const properties: Property[] = [
         bedType: "3 Bedrooms with King & Double Beds",
         view: "360-Degree Aravalli Mountain Panorama",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/the-ananta-udaipur/Presidential_Villa_1_iicq7c",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_450,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_2475,f_auto,c_fit/the-ananta-udaipur/Swimming_Pool_",
+          "/Ananta Photos/Udaipur/Presidential Villa/Presidential_suite_pool_at_ananta_udaipur_suites_in_Udaipur_i2ocjh_dvi4lj.jpg",
+          "/Ananta Photos/Udaipur/Presidential Villa/Presidential_suite_bedroom_at_ananta_udaipur_suites_in_Udaipur_1_rclkoa_nkzn4b.jpg",
+          "/Ananta Photos/Udaipur/Presidential Villa/DSC00327-Enhanced-NR_doced6.jpg",
         ],
         description:
           "An expansive private residence offering 4,500 sq. ft. of pure luxury. Includes three opulent master bedrooms, a private outdoor swimming pool with sun lounger deck, grand entertaining living salon, formal dining pavilion, and dedicated butler support on request.",
@@ -219,8 +224,9 @@ export const properties: Property[] = [
         bedType: "3 Regal Bedrooms",
         view: "Aravalli Ridge & Private Courtyard / Pool Views",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/the-ananta-udaipur/Ananta_Villa_k443r8",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/the-ananta-udaipur/Presidential_Villa_1_iicq7c",
+          "/Ananta Photos/Udaipur/Ananta Villa/Ananta_Udaipur_Sep22_Day_03_Golf_Suite_0315-HDR-Edit_hi2yh2.jpg",
+          "/Ananta Photos/Udaipur/Ananta Villa/Ananta_Udaipur_Sep22_Day_03_Golf_Suite_0345-HDR_dngzyn.jpg",
+          "/Ananta Photos/Udaipur/Ananta Villa/C589_2022_304F_naeeed.jpg",
         ],
         description:
           "The signature three-bedroom Ananta Villa combines contemporary architectural grace with authentic Rajasthani aesthetic accents. Sprawling across 4,500 sq. ft., it features a private swimming pool, internal courtyards, lavish living spaces, and bespoke hospitality services.",
@@ -242,9 +248,9 @@ export const properties: Property[] = [
         bedType: "3 Palatial Master Bedrooms",
         view: "Unobstructed Valley Horizon & Mountain Peaks",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/the-ananta-udaipur/Presidential_Villa_1_iicq7c",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/the-ananta-udaipur/Ananta_Villa_k443r8",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_450,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_2475,f_auto,c_fit/the-ananta-udaipur/Swimming_Pool_",
+          "/Ananta Photos/Udaipur/Chairman Villa/Ananta_Udaipur_Fotowalah-25_ulgb9q.webp",
+          "/Ananta Photos/Udaipur/Chairman Villa/Ananta_Udaipur_Sep22_Day_03_Golf_Suite_0315-HDR-Edit_hi2yh2.jpg",
+          "/Ananta Photos/Udaipur/Chairman Villa/Ananta_Udaipur_Fotowalah-36_ucdcjn.webp",
         ],
         description:
           "The absolute pinnacle of luxury accommodation at The Ananta Udaipur. The Chairman Villa is a stately 4,500 sq. ft. private estate boasting three grandiose master suites, an exclusive swimming pool, majestic living pavilion, and panoramic elevated vantage points overlooking the entire Aravalli valley.",
@@ -352,8 +358,9 @@ export const properties: Property[] = [
         bedType: "King-size Bed or Twin Beds",
         view: "Aravalli Hills & Desert Horizon",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-and-resort-pushkar/Deluxe_Tent_zk9jm8",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_2813/x_0,y_0,w_4996,h_2813,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/ananta-spa-and-resort-pushkar/A_decorative_shade_at_our_5-star_resort_in_Pushkar_with_a_Ganesh_statue,_a_green_patch_and_trees_",
+          "/Ananta Photos/Pushkar/Luxury Tent/DJI_0246-HDR.jpg",
+          "/Ananta Photos/Pushkar/Luxury Tent/DJI_0234-HDR.jpg",
+          "/Ananta Photos/Pushkar/Luxury Tent/DJI_0231-HDR.webp",
         ],
         description:
           "Experience regal desert glamping framed by the Aravalli hills. These air-conditioned canopied tents feature authentic handcrafted wooden furnishings, a private sit-out veranda overlooking desert flora, and an en-suite bathroom with a cubicle shower.",
@@ -375,8 +382,9 @@ export const properties: Property[] = [
         bedType: "Plush King Bed",
         view: "Scenic Hillside & Landscaped Garden Vistas",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/x_267,y_0,w_1066,h_1066,r_0,c_crop,q_80,fl_progressive/w_1066,f_auto,c_fit/ananta-spa-and-resort-pushkar/LCT_with_Sit_Out_Bedroom_feugx9",
-          "https://assets.simplotel.com/simplotel/image/upload/x_443,y_0,w_1515,h_1515,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-and-resort-pushkar/luxury-cottage-with-balcony",
+          "/Ananta Photos/Pushkar/Luxury Cottage with Private Sit-out/LCT_with_Sit_Out_Bedroom_feugx9.jpg",
+          "/Ananta Photos/Pushkar/Luxury Cottage with Private Sit-out/LCT_with_Sit_Out_Outside_z7vwpt.jpg",
+          "/Ananta Photos/Pushkar/Luxury Cottage with Private Sit-out/Ananta_Udaipur_Fotowalah-25_ulgb9q.webp",
         ],
         description:
           "Standalone single-level cottages combining Balinese design sensibilities with desert serenity. Features a dedicated private sit-out patio, signature open-air garden shower, walk-in wardrobe, and comfortable lounge armchairs.",
@@ -398,8 +406,9 @@ export const properties: Property[] = [
         bedType: "Master King Bed",
         view: "Panoramic Aravalli Range & Desert Landscape",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3326/x_0,y_1384,w_4995,h_1942,r_0,c_crop,q_80,fl_progressive/w_2475,f_auto,c_fit/ananta-spa-and-resort-pushkar/Junior_Suite_Ananta_Spa_and_Resort,_Pushkar__(1",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-and-resort-pushkar/Deluxe_Tent_zk9jm8",
+          "/Ananta Photos/Pushkar/Premium Tent/Premium_Tent_amoivq.jpg",
+          "/Ananta Photos/Pushkar/Premium Tent/AMP_0341.jpg",
+          "/Ananta Photos/Pushkar/Premium Tent/AMP_0455-HDR.jpg",
         ],
         description:
           "An expansive royal glamping suite offering an independent living room and dedicated private sit-out deck. Designed with double-insulated canopies, regal drapery, and unobstructed vistas of the Pushkar hills.",
@@ -421,8 +430,9 @@ export const properties: Property[] = [
         bedType: "King-size Bed",
         view: "Mountain Ridges & Garden Tranquility",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3327/x_0,y_257,w_5000,h_2812,r_0,c_crop,q_80,fl_progressive/w_900,f_auto,c_fit/ananta-spa-and-resort-pushkar/Interiors_of_one_of_the_bedrooms_at_our_presidential_suite_in_Pushkar_featuring_a_bed,_a_blue_sofa_and_other_furniture_5761PS-68",
-          "https://assets.simplotel.com/simplotel/image/upload/x_0,y_172,w_3302,h_1858,r_0,c_crop,q_80,fl_progressive/w_2475,f_auto,c_fit/ananta-spa-and-resort-pushkar/Old_charm_with_new_age_ywbitd",
+          "/Ananta Photos/Pushkar/Premium Cottage with Jacuzzi/AMP_0341.jpg",
+          "/Ananta Photos/Pushkar/Premium Cottage with Jacuzzi/AMP_0455-HDR.jpg",
+          "/Ananta Photos/Pushkar/Premium Cottage with Jacuzzi/Ananta_Udaipur_Fotowalah-25_ulgb9q.webp",
         ],
         description:
           "The ultimate couples' hideaway in Pushkar. Features a private in-cottage Jacuzzi tub for soothing soaks under the desert sky, complemented by rich teakwood furnishings, a private balcony, and attentive concierge service.",
@@ -444,9 +454,9 @@ export const properties: Property[] = [
         bedType: "2 Master Bedrooms (King & Queen Beds)",
         view: "360-Degree Aravalli Hills & Desert Horizon",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3327/x_0,y_257,w_5000,h_2812,r_0,c_crop,q_80,fl_progressive/w_900,f_auto,c_fit/ananta-spa-and-resort-pushkar/Interiors_of_one_of_the_bedrooms_at_our_presidential_suite_in_Pushkar_featuring_a_bed,_a_blue_sofa_and_other_furniture_5761PS-68",
-          "https://assets.simplotel.com/simplotel/image/upload/x_0,y_172,w_3302,h_1858,r_0,c_crop,q_80,fl_progressive/w_2475,f_auto,c_fit/ananta-spa-and-resort-pushkar/Old_charm_with_new_age_ywbitd",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_2813/x_0,y_0,w_4996,h_2813,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/ananta-spa-and-resort-pushkar/A_decorative_shade_at_our_5-star_resort_in_Pushkar_with_a_Ganesh_statue,_a_green_patch_and_trees_",
+          "/Ananta Photos/Pushkar/Ananta Villa/The_living_room_of_our_Presidential_Suites_in_Pushkar_with__a_sofa_set_32.webp",
+          "/Ananta Photos/Pushkar/Ananta Villa/Interiors_of_one_of_the_bedrooms_at_our_presidential_suite_in_Pushkar_featuring_a_bed,_a_blue_sofa_and_other_furniture_5761.webp",
+          "/Ananta Photos/Pushkar/Ananta Villa/Interiors_of_one_of_the_bedrooms_at_our_presidential_suite_in_Pushkar_featuring_a_bed,_a_blue_sofa_and_other_furniture_5767.webp",
         ],
         description:
           "The pinnacle of heritage luxury at Ananta Pushkar. An exclusive presidential residence featuring two independent master bedrooms, private outdoor Jacuzzi, grand living salon with formal dining space, private pantry, and private garden patio.",
@@ -546,8 +556,9 @@ export const properties: Property[] = [
         bedType: "Plush King Bed",
         view: "Mountain & Lush Valley View",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-and-resort-ajabgarh/fire-villa-with-sit-out-3",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_513,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_2475,f_auto,c_fit/ananta-spa-and-resort-ajabgarh/Fire_Villa_de9b59d1",
+          "/Ananta Photos/Ajabgarh/Fire Villa with Balcony/fire-villa-exterior-1.jpg",
+          "/Ananta Photos/Ajabgarh/Fire Villa with Balcony/fire-villa-with-sit-out-3.jpg",
+          "/Ananta Photos/Ajabgarh/Fire Villa with Balcony/fire-villa-with-sit-out-3 (1).jpg",
         ],
         description:
           "Inspired by the element of Fire with striking energetic geometry and conical thatched roofs. Features a partitioned bedroom layout, plush king bed, ambient lighting, and an elevated private balcony framing panoramic views of the Aravalli valleys.",
@@ -569,8 +580,9 @@ export const properties: Property[] = [
         bedType: "Plush King Bed",
         view: "Secluded Hillside & Garden View",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_513,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_2475,f_auto,c_fit/ananta-spa-and-resort-ajabgarh/Fire_Villa_de9b59d1",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-and-resort-ajabgarh/fire-villa-with-sit-out-3",
+          "/Ananta Photos/Ajabgarh/Fire Villa with Sit-out/bedroom-full-view-1.jpg",
+          "/Ananta Photos/Ajabgarh/Fire Villa with Sit-out/fire-villa-exterior-1 (1).jpg",
+          "/Ananta Photos/Ajabgarh/Fire Villa with Sit-out/fire-villa-with-sit-out-3 (2).jpg",
         ],
         description:
           "Ground-level elemental villas providing seamless connection to nature through a generous private sit-out patio. Designed with warm earth tones, spacious bedroom partitioned living spaces, and tranquil garden surroundings.",
@@ -592,8 +604,9 @@ export const properties: Property[] = [
         bedType: "King Bed",
         view: "Tranquil Water Lagoon & Mountain View",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-and-resort-ajabgarh/lagoon-villa",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-and-resort-ajabgarh/AMP_6419-HDR",
+          "/Ananta Photos/Ajabgarh/Lagoon Villa/Lagoon_Villa-1_781d9238.jpg",
+          "/Ananta Photos/Ajabgarh/Lagoon Villa/AMP_6634-HDR.jpg",
+          "/Ananta Photos/Ajabgarh/Lagoon Villa/AMP_6652-HDR.jpg",
         ],
         description:
           "Architecturally elevated on stilts directly above the resort's tranquil lagoon water body. Allows the landscape and shimmering water to flow seamlessly beneath, featuring timber decks, full-height glass doors, and peaceful waterside serenity.",
@@ -615,8 +628,9 @@ export const properties: Property[] = [
         bedType: "King Bed + Cozy Loft Bed",
         view: "Valley Canopy & Mountain Ridges",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_865,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-and-resort-ajabgarh/bamboo-villa",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-and-resort-ajabgarh/AMP_6419-HDR",
+          "/Ananta Photos/Ajabgarh/Bamboo Villa/3U3A3847_e3d41b93.jpg",
+          "/Ananta Photos/Ajabgarh/Bamboo Villa/AMP_6359-HDR_jvsyvi.jpg",
+          "/Ananta Photos/Ajabgarh/Bamboo Villa/AMP_0341.jpg",
         ],
         description:
           "Arranged in a circular configuration with inward-curving roofs mimicking a natural bamboo grove. Interiors blend calming green and earthy tones with rattan furniture, exposed rafters, an outdoor verandah, and a cozy loft space.",
@@ -638,9 +652,9 @@ export const properties: Property[] = [
         bedType: "2 Master Bedrooms (King & Queen Beds)",
         view: "360-Degree Aravalli Valley & Mountain Horizon",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-and-resort-ajabgarh/earth-villa-1",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_513,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_2475,f_auto,c_fit/ananta-spa-and-resort-ajabgarh/Fire_Villa_de9b59d1",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-and-resort-ajabgarh/bamboo-villa",
+          "/Ananta Photos/Ajabgarh/Earth Villa/earth-villa-1.jpg",
+          "/Ananta Photos/Ajabgarh/Earth Villa/Earth_Villa-1_a8fbe3ee.webp",
+          "/Ananta Photos/Ajabgarh/Earth Villa/Earth_Villa-3_99cc884d.webp",
         ],
         description:
           "The crowning multi-bedroom villa at Ananta Ajabgarh. Limited to only 9 exclusive units, Earth Villas showcase organic mud-plastered walls and earthy curves, featuring two private master bedrooms, a private plunge pool, and panoramic mountain views.",
@@ -748,8 +762,9 @@ export const properties: Property[] = [
         bedType: "1 King Bed",
         view: "Mountain view",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_514,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-resort-jaipur/Evoke(2",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3335/x_234,y_648,w_4766,h_2683,c_crop,q_80,fl_progressive/w_900,h_506,f_auto,c_fit/ananta-spa-resorts-jaipur/095A1236-HDR_bsfhxu",
+          "/Ananta Photos/Jaipur/Evoke/095A0995-HDR_qzv3ka.jpg",
+          "/Ananta Photos/Jaipur/Evoke/095A1015-HDR_zk67lh.jpg",
+          "/Ananta Photos/Jaipur/Evoke/095A1035-HDR_waptyg.jpg",
         ],
         description:
           "Spanning 600 sq. ft., the Evoke room offers an exquisite blend of contemporary elegance and traditional Rajputana heritage. Features a plush king bed, expansive windows overlooking scenic mountain views, a marble bathroom, and dedicated workspace.",
@@ -772,8 +787,9 @@ export const properties: Property[] = [
         bedType: "1 King Bed or Twin Beds",
         view: "Mountain view",
         images: [
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_658,y_270,w_3063,h_3063,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-resort-jaipur/Elegant(1",
-          "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_514,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-resort-jaipur/Evoke(2",
+          "/Ananta Photos/Jaipur/Elegant/0Q8A6883-HDR_-_Copy_azwyai.webp",
+          "/Ananta Photos/Jaipur/Elegant/0Q8A6887-HDR_-_Copy_uc4z6j.webp",
+          "/Ananta Photos/Jaipur/Elegant/0Q8A6890-HDR_-_Copy_xuiv4i.webp",
         ],
         description:
           "Covering 650 sq. ft., the Elegant room provides an upgraded, generously proportioned sanctuary featuring warm royal decor, flexible bedding options, serene mountain views, and an upscale marble bathroom crafted for indulgent comfort.",
