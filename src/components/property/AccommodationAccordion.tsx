@@ -79,7 +79,7 @@ function RoomAmenitiesSection({
           Amenities
         </h4>
         <p className={`${isMobile ? "text-[11px]" : "text-xs"} text-stone-500 leading-relaxed`}>
-          Each room includes verified resort amenities and essential comforts. Stay add-ons and customized preferences can be tailored upon enquiry.
+          Amenities shown are for reference only. Availability, access, timings and inclusions may vary.
         </p>
       </div>
 
@@ -236,10 +236,10 @@ export default function AccommodationAccordion({
                 <button
                   type="button"
                   onClick={() => openEnquiry(propertySlug, acc.name)}
-                  className="w-full py-3.5 bg-forest hover:bg-forest-hover text-white text-xs font-medium uppercase tracking-widest rounded transition-all duration-200 shadow-sm flex items-center justify-center gap-2"
+                  className="w-full min-h-[46px] px-5 py-3 bg-forest hover:bg-forest-hover text-white text-[11px] sm:text-xs font-semibold uppercase tracking-wider rounded transition-all duration-200 shadow-sm flex items-center justify-center gap-2.5 text-center"
                 >
-                  <CalendarCheck className="w-4 h-4" />
-                  <span>Enquire About {acc.name}</span>
+                  <CalendarCheck className="w-4 h-4 shrink-0 text-white" />
+                  <span className="leading-snug text-center">Enquire About {acc.name}</span>
                 </button>
               </div>
             </div>
@@ -400,9 +400,9 @@ export default function AccommodationAccordion({
                 <button
                   type="button"
                   onClick={() => openEnquiry(propertySlug, activeAcc.name)}
-                  className="w-full sm:w-auto px-7 py-3 bg-forest hover:bg-forest-hover text-white text-xs font-medium uppercase tracking-widest rounded transition-all duration-200 shadow-sm hover:shadow flex items-center justify-center gap-2 group shrink-0"
+                  className="w-full sm:w-auto px-7 py-3 bg-forest hover:bg-forest-hover text-white text-xs font-semibold uppercase tracking-wider rounded transition-all duration-200 shadow-sm hover:shadow flex items-center justify-center gap-2 group shrink-0"
                 >
-                  <CalendarCheck className="w-4 h-4" />
+                  <CalendarCheck className="w-4 h-4 shrink-0" />
                   <span>Enquire About This Room</span>
                 </button>
               </div>
