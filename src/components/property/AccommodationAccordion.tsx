@@ -15,6 +15,20 @@ import {
   ChevronLeft,
   ChevronRight,
   ChevronDown,
+  Wind,
+  Wifi,
+  Tv,
+  Phone,
+  Coffee,
+  UtensilsCrossed,
+  Wine,
+  Droplets,
+  Armchair,
+  Shirt,
+  Sparkles,
+  ConciergeBell,
+  Sun,
+  ShowerHead,
 } from "lucide-react";
 
 /**
@@ -52,6 +66,59 @@ function MobileOverviewSection({ description }: { description: string }) {
       )}
     </div>
   );
+}
+
+/**
+ * Contextual icon mapper for in-room amenities
+ */
+function getAmenityIcon(name: string, isMobile = false) {
+  const iconClass = `${isMobile ? "w-3.5 h-3.5" : "w-4 h-4"} text-forest shrink-0`;
+  const lower = name.toLowerCase();
+
+  if (lower.includes("condition") || lower.includes("ac ") || lower.includes("climate")) {
+    return <Wind className={iconClass} />;
+  }
+  if (lower.includes("wi-fi") || lower.includes("wifi") || lower.includes("internet")) {
+    return <Wifi className={iconClass} />;
+  }
+  if (lower.includes("television") || lower.includes("tv")) {
+    return <Tv className={iconClass} />;
+  }
+  if (lower.includes("telephone") || lower.includes("phone")) {
+    return <Phone className={iconClass} />;
+  }
+  if (lower.includes("tea") || lower.includes("coffee")) {
+    return <Coffee className={iconClass} />;
+  }
+  if (lower.includes("breakfast") || lower.includes("dining")) {
+    return <UtensilsCrossed className={iconClass} />;
+  }
+  if (lower.includes("bar")) {
+    return <Wine className={iconClass} />;
+  }
+  if (lower.includes("water") || lower.includes("mineral")) {
+    return <Droplets className={iconClass} />;
+  }
+  if (lower.includes("desk") || lower.includes("chair") || lower.includes("work")) {
+    return <Armchair className={iconClass} />;
+  }
+  if (lower.includes("wardrobe") || lower.includes("closet")) {
+    return <Shirt className={iconClass} />;
+  }
+  if (lower.includes("iron")) {
+    return <Sparkles className={iconClass} />;
+  }
+  if (lower.includes("service") || lower.includes("concierge") || lower.includes("bell")) {
+    return <ConciergeBell className={iconClass} />;
+  }
+  if (lower.includes("balcony") || lower.includes("sit-out") || lower.includes("terrace") || lower.includes("patio")) {
+    return <Sun className={iconClass} />;
+  }
+  if (lower.includes("bath") || lower.includes("shower") || lower.includes("jacuzzi")) {
+    return <ShowerHead className={iconClass} />;
+  }
+
+  return <Check className={iconClass} />;
 }
 
 /**
@@ -97,7 +164,7 @@ function RoomAmenitiesSection({
               isMobile ? "text-[11px]" : "text-xs"
             }`}
           >
-            <Check className={`${isMobile ? "w-3 h-3" : "w-3.5 h-3.5"} text-forest shrink-0`} />
+            {getAmenityIcon(item, isMobile)}
             <span className="leading-tight">{item}</span>
           </div>
         ))}
