@@ -52,6 +52,7 @@ export interface Property {
   tagline: string;
   heroIntro?: string;
   heroImage: string;
+  heroImages?: string[];
   cardImage: string;
   gallery: string[];
   shortDescription: string;

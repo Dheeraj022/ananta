@@ -35,6 +35,11 @@ export const properties: Property[] = [
     },
     heroImage:
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_2810/x_2,y_0,w_4996,h_2810,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/ananta-hotels-resorts/The_Ananta_Udaipur_1_niakxc",
+    heroImages: [
+      "/Ananta Photos 2/Udaipur/Ananta_Udaipur_Sep22_Day_03_Golf_Suite_0165-HDR_w5re8z.webp",
+      "/Ananta Photos 2/Udaipur/Ananta_Udaipur_Sep22_Day_03_Golf_Suite_0189-HDR-Edit_kbubnr.webp",
+      "/Ananta Photos 2/Udaipur/Ananta_Udaipur_Sep22_Day_03_Golf_Suite_0249-HDR_rudspd.webp",
+    ],
     cardImage:
       "https://assets.simplotel.com/simplotel/image/upload/x_0,y_0,w_1499,h_843,r_0,c_crop,q_80,fl_progressive/w_825,f_auto,c_fit/ananta-hotels-resorts/facade_of_the_lobby_at_Ananta_udaipur_sgvzk2_d5ngdh_wxradf",
     gallery: [
@@ -301,6 +306,12 @@ export const properties: Property[] = [
     },
     heroImage:
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_2813/x_0,y_0,w_4996,h_2813,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/ananta-spa-and-resort-pushkar/A_decorative_shade_at_our_5-star_resort_in_Pushkar_with_a_Ganesh_statue,_a_green_patch_and_trees_",
+    heroImages: [
+      "/Ananta Photos 2/Pushkar/Ananta_Pushkar-Fotowalah-1_kgvsvl.webp",
+      "/Ananta Photos 2/Pushkar/The_bed_and_the_furnishings_of_our_luxury_tent_rooms_in_Pushkar_56.webp",
+      "/Ananta Photos 2/Pushkar/Interiors_of_one_of_the_bedrooms_at_our_presidential_suite_in_Pushkar_featuring_a_bed,_a_blue_sofa_and_other_furniture_5761PS-68.webp",
+      "/Ananta Photos 2/Pushkar/The_living_room_of_our_Presidential_Suites_in_Pushkar_with__a_sofa_set,_a_television_and_a_large_window_PS-424332_1.webp",
+    ],
     cardImage:
       "https://assets.simplotel.com/simplotel/image/upload/x_0,y_172,w_3302,h_1858,r_0,c_crop,q_80,fl_progressive/w_2475,f_auto,c_fit/ananta-spa-and-resort-pushkar/Old_charm_with_new_age_ywbitd",
     gallery: [
@@ -509,6 +520,12 @@ export const properties: Property[] = [
     },
     heroImage:
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/ananta-spa-and-resort-ajabgarh/Reception_a10391d9",
+    heroImages: [
+      "/Ananta Photos 2/Ajabgarh/Reception_a10391d9.webp",
+      "/Ananta Photos 2/Ajabgarh/Fire_Villa_de9b59d1.jpg",
+      "/Ananta Photos 2/Ajabgarh/Copy_of_DSC08085_1aa47124.jpg",
+      "/Ananta Photos 2/Ajabgarh/Copy_of_DSC07634_28cdfbf4.jpg",
+    ],
     cardImage:
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_513,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_2475,f_auto,c_fit/ananta-spa-and-resort-ajabgarh/Fire_Villa_de9b59d1",
     gallery: [
@@ -709,6 +726,11 @@ export const properties: Property[] = [
     },
     heroImage:
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3335/x_0,y_261,w_5000,h_2812,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/ananta-hotels-resorts/0A4A7146_k3um8e",
+    heroImages: [
+      "/Ananta Photos 2/Jaipur/SNY04410_qwegut.webp",
+      "/Ananta Photos 2/Jaipur/Presidential_Suite(4).webp",
+      "/Ananta Photos 2/Jaipur/Presidential_Suite(16).webp",
+    ],
     cardImage:
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3335/x_234,y_648,w_4766,h_2683,c_crop,q_80,fl_progressive/w_900,h_506,f_auto,c_fit/ananta-spa-resorts-jaipur/095A1236-HDR_bsfhxu",
     gallery: [
