@@ -14,8 +14,8 @@ export const siteConfig = {
   bookingNotice:
     "Submitting an enquiry does not confirm a booking.",
   contact: {
-    phone: "+91 98765 43210 (Guest-assist Desk)",
-    phoneRaw: "+919876543210",
+    phone: "+91 92790 22649",
+    phoneRaw: "+919279022649",
     email: "info@guest-assist.com",
     hours: "Monday – Saturday: 9:00 AM – 8:00 PM IST",
     address: "BASEMENT, 159-C, New Friends Colony, Sarai Jullena, New Delhi, South East Delhi, Delhi, 110025",
