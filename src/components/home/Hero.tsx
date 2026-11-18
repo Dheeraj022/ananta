@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEnquiry } from "../enquiry/EnquiryContext";
 import { CalendarCheck, Compass, ChevronLeft, ChevronRight } from "lucide-react";
 import EnquiryStrip from "./EnquiryStrip";
+import { siteConfig } from "@/data/site-config";
 
 const heroSlides = [
   {
@@ -153,19 +154,27 @@ export default function Hero() {
           <div className="flex items-center gap-2">
             <span className="h-px w-6 bg-gold inline-block" />
             <span className="text-xs uppercase tracking-[0.22em] font-medium text-gold">
-              Info & Details
+              Independent Travel Agency
             </span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-3xl font-serif font-light tracking-tight leading-[1.15]">
-            Explore Ananta Spa & Resorts, Rajasthan
+            Explore Ananta Properties in Rajasthan
           </h1>
 
           {/* Supporting Copy */}
           <p className="text-sm text-stone-200 leading-relaxed font-light">
-            Find property information and enquire about stay details and accommodation options.
+            Find general property information, accommodation details, amenities and travel information for selected Ananta properties in Udaipur, Pushkar, Ajabgarh and Jaipur. Submit an enquiry if you need assistance with your information request.
           </p>
+
+          {/* Trust Badge for Mobile */}
+          <div className="flex flex-wrap items-center gap-2 text-[10px] text-[#F3CA7E] font-medium">
+            <span className="bg-[#0B1A14] border border-[#BA9554]/60 px-2 py-0.5 rounded">Enquiry Based</span>
+            <span className="bg-[#0B1A14] border border-[#BA9554]/60 px-2 py-0.5 rounded">No Online Booking</span>
+            <span className="bg-[#0B1A14] border border-[#BA9554]/60 px-2 py-0.5 rounded">No Hotel Payment</span>
+            <span className="bg-[#0B1A14] border border-[#BA9554]/60 px-2 py-0.5 rounded">Independent Information Service</span>
+          </div>
 
           {/* CTAs */}
           <div className="flex flex-col gap-3 pt-2">
@@ -184,7 +193,7 @@ export default function Hero() {
               className="w-full py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-sm text-xs font-medium uppercase tracking-[0.2em] rounded transition-all duration-200 flex items-center justify-center gap-2"
             >
               <CalendarCheck className="w-4 h-4 text-gold" />
-              <span>Send an Enquiry</span>
+              <span>Submit Enquiry</span>
             </button>
           </div>
         </div>
@@ -229,29 +238,29 @@ export default function Hero() {
             <div className="flex items-center gap-2 mb-3 sm:mb-4">
               <span className="h-px w-6 bg-gold inline-block" />
               <span className="text-xs uppercase tracking-[0.22em] font-medium text-gold">
-                Info & Details
+                Independent Travel Agency
               </span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-light tracking-tight leading-[1.1] mb-6">
-              Explore Ananta Spa & Resorts, Rajasthan
+              Explore Ananta Properties in Rajasthan
             </h1>
 
             {/* Supporting Copy */}
             <p className="text-base sm:text-lg text-stone-200 leading-relaxed font-light mb-6 max-w-2xl">
-              Find property information and enquire about stay details and accommodation options.
+              Find general property information, accommodation details, amenities and travel information for selected Ananta properties in Udaipur, Pushkar, Ajabgarh and Jaipur. Submit an enquiry if you need assistance with your information request.
             </p>
 
             {/* Trust Badge Pill — Shown only on laptop/desktop, positioned below supporting copy */}
             <div className="hidden lg:inline-flex items-center gap-3.5 px-6 py-2 rounded-full bg-[#0B1A14]/90 border border-[#BA9554] backdrop-blur-md mb-8 shadow-lg">
               <span className="text-xs font-medium text-[#F3CA7E] tracking-wide">Enquiry Based</span>
               <span className="w-px h-3.5 bg-[#BA9554]/60" />
-              <span className="text-xs font-medium text-[#F3CA7E] tracking-wide">No Booking</span>
+              <span className="text-xs font-medium text-[#F3CA7E] tracking-wide">No Online Booking</span>
               <span className="w-px h-3.5 bg-[#BA9554]/60" />
-              <span className="text-xs font-medium text-[#F3CA7E] tracking-wide">No Payment</span>
+              <span className="text-xs font-medium text-[#F3CA7E] tracking-wide">No Hotel Payment</span>
               <span className="w-px h-3.5 bg-[#BA9554]/60" />
-              <span className="text-xs font-medium text-[#F3CA7E] tracking-wide">Independent Service</span>
+              <span className="text-xs font-medium text-[#F3CA7E] tracking-wide">Independent Information Service</span>
             </div>
 
             {/* CTAs */}
@@ -271,7 +280,7 @@ export default function Hero() {
                 className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-sm text-xs font-medium uppercase tracking-[0.2em] rounded transition-all duration-200 flex items-center justify-center gap-2"
               >
                 <CalendarCheck className="w-4 h-4 text-gold" />
-                <span>Send an Enquiry</span>
+                <span>Submit Enquiry</span>
               </button>
             </div>
           </div>
@@ -298,6 +307,13 @@ export default function Hero() {
         {/* Compact Enquiry Strip at bottom of Hero */}
         <div className="relative z-20 w-full px-4 sm:px-6 lg:px-8 pb-8 max-w-7xl mx-auto">
           <EnquiryStrip />
+        </div>
+      </div>
+
+      {/* Short Disclosure Below Hero */}
+      <div className="bg-[#FAF7F2] border-b border-[#E8DFD1] py-3.5 px-4 text-xs text-stone-700 leading-relaxed">
+        <div className="max-w-5xl mx-auto text-center font-light">
+          <strong className="font-semibold text-charcoal">Guest-Assist</strong> is an independent travel agency operated by <strong className="font-semibold text-charcoal">{siteConfig.companyLegalName}</strong>. We are not the official website of, or affiliated with or authorized by, Ananta Hotels & Resorts. Enquiry submission does not confirm a booking. Final availability, pricing, payment and reservation confirmation must be obtained directly from the relevant hotel.
         </div>
       </div>
     </>

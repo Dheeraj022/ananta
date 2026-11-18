@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { properties } from "@/data/properties";
 import { siteConfig } from "@/data/site-config";
 import { useEnquiry } from "./EnquiryContext";
-import { CheckCircle2, AlertCircle, Loader2, ChevronDown, ChevronUp } from "lucide-react";
+import { CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 
 interface EnquiryFormProps {
   initialPropertySlug?: string;
@@ -41,12 +42,12 @@ export default function EnquiryForm({
     checkIn: initialCheckIn || ctxCheckIn || "",
     checkOut: initialCheckOut || ctxCheckOut || "",
     adults: initialAdults ?? ctxAdults ?? 2,
+    children: 0,
     specialRequests: "",
     privacyAccepted: true,
     honeypot: "",
   });
 
-  const [specialRequestsOpen, setSpecialRequestsOpen] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -148,7 +149,6 @@ export default function EnquiryForm({
 
       const payload = {
         ...formData,
-        children: 0,
         propertyName: selectedProperty ? selectedProperty.name : "Featured Property",
       };
 
@@ -197,9 +197,8 @@ export default function EnquiryForm({
         <h3 className="text-2xl font-serif text-charcoal font-semibold mb-2">
           Enquiry Received
         </h3>
-        <p className="text-stone-600 mb-4 max-w-md mx-auto text-sm leading-relaxed">
-          Thank you for your enquiry. Your request has been submitted successfully.
-          Our team will contact you regarding the details.
+        <p className="text-stone-700 mb-5 max-w-lg mx-auto text-sm leading-relaxed">
+          Thank you. Your enquiry has been submitted to Guest-Assist. This message confirms receipt of your enquiry only and does not confirm room availability or a reservation. For final rates, payment and booking confirmation, please contact the relevant hotel directly.
         </p>
         <div className="bg-sand-cream p-4 rounded-md border border-sand max-w-sm mx-auto mb-6">
           <div className="text-xs uppercase tracking-wider text-stone-500 mb-1">
@@ -207,9 +206,6 @@ export default function EnquiryForm({
           </div>
           <div className="font-mono text-base font-bold text-forest">{referenceId}</div>
         </div>
-        <p className="text-xs text-stone-500 max-w-md mx-auto mb-6">
-          {siteConfig.bookingNotice}
-        </p>
         <button
           type="button"
           onClick={() => {
@@ -307,11 +303,11 @@ export default function EnquiryForm({
         </div>
       </div>
 
-      {/* Dates & Adults Row - Clean 3-column layout without children */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-3.5 bg-sand-cream/40 rounded-lg border border-sand">
+      {/* Dates, Adults & Children Row */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 p-3.5 bg-sand-cream/40 rounded-lg border border-sand">
         <div>
           <label className="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1.5">
-            Check-In Date <span className="text-red-500">*</span>
+            Preferred Check-in Date <span className="text-red-500">*</span>
           </label>
           <input
             type="date"
@@ -327,7 +323,7 @@ export default function EnquiryForm({
 
         <div>
           <label className="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1.5">
-            Check-Out Date <span className="text-red-500">*</span>
+            Preferred Check-out Date <span className="text-red-500">*</span>
           </label>
           <input
             type="date"
@@ -343,7 +339,7 @@ export default function EnquiryForm({
 
         <div>
           <label className="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1.5">
-            Adults (12+ yrs) <span className="text-red-500">*</span>
+            Number of Adults <span className="text-red-500">*</span>
           </label>
           <select
             value={formData.adults}
@@ -353,6 +349,23 @@ export default function EnquiryForm({
             {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
               <option key={n} value={n}>
                 {n} {n === 1 ? "Adult" : "Adults"}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div>
+          <label className="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1.5">
+            Number of Children <span className="text-stone-400 font-normal lowercase">(if applicable)</span>
+          </label>
+          <select
+            value={formData.children}
+            onChange={(e) => setFormData({ ...formData, children: parseInt(e.target.value, 10) })}
+            className="w-full px-3 py-2 text-sm bg-white border border-stone-300 rounded text-charcoal focus:outline-none focus:ring-1 focus:ring-forest font-medium cursor-pointer"
+          >
+            {[0, 1, 2, 3, 4].map((n) => (
+              <option key={n} value={n}>
+                {n} {n === 0 ? "0 Children" : n === 1 ? "1 Child" : `${n} Children`}
               </option>
             ))}
           </select>
@@ -410,40 +423,31 @@ export default function EnquiryForm({
         </div>
       </div>
 
-      {/* Collapsible Special Requests (Courtyard Interaction Style) */}
-      <div className="border border-stone-200/80 rounded-lg bg-stone-50/50 p-3">
-        <button
-          type="button"
-          onClick={() => setSpecialRequestsOpen(!specialRequestsOpen)}
-          className="w-full flex items-center justify-between text-left text-xs font-semibold uppercase tracking-wider text-stone-700 hover:text-forest transition-colors py-1 cursor-pointer"
-          aria-expanded={specialRequestsOpen}
-        >
-          <span className="flex items-center gap-1.5">
-            <span>Special Requests and Questions</span>
-            <span className="text-stone-400 font-normal lowercase">(optional)</span>
-          </span>
-          {specialRequestsOpen ? (
-            <ChevronUp className="w-4 h-4 text-stone-500" />
-          ) : (
-            <ChevronDown className="w-4 h-4 text-stone-500" />
-          )}
-        </button>
-
-        {specialRequestsOpen && (
-          <div className="mt-2.5 pt-2 border-t border-stone-200/60">
-            <textarea
-              rows={3}
-              value={formData.specialRequests}
-              onChange={(e) => setFormData({ ...formData, specialRequests: e.target.value })}
-              placeholder="e.g. Dietary preferences, early arrival, airport transfer enquiry, celebratory occasion..."
-              className="w-full px-3.5 py-2.5 text-sm bg-white border border-stone-300 rounded text-charcoal focus:outline-none focus:ring-1 focus:ring-forest"
-            />
-          </div>
-        )}
+      {/* Your Question / Information Requested */}
+      <div>
+        <label className="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-1.5">
+          Your Question / Information Requested <span className="text-stone-400 font-normal lowercase">(optional)</span>
+        </label>
+        <textarea
+          rows={3}
+          value={formData.specialRequests}
+          onChange={(e) => setFormData({ ...formData, specialRequests: e.target.value })}
+          placeholder="Share your question or details you would like to know (e.g. room preferences, dietary requirements, travel dates assistance)..."
+          className="w-full px-3.5 py-2.5 text-sm bg-white border border-stone-300 rounded text-charcoal focus:outline-none focus:ring-1 focus:ring-forest"
+        />
       </div>
 
-      {/* Submit Button & Disclaimer */}
-      <div className="pt-2 space-y-2">
+      {/* Form consent note */}
+      <div className="p-3.5 bg-sand-cream/60 rounded border border-sand text-xs text-stone-600 leading-relaxed">
+        By submitting this form, you are requesting travel information and enquiry assistance from Guest-Assist. This is not a hotel booking or reservation. Do not enter payment card details or sensitive personal information in this form. Please review our{" "}
+        <Link href="/privacy-policy" className="text-forest underline font-medium">
+          Privacy Policy
+        </Link>{" "}
+        to understand how enquiry information is used.
+      </div>
+
+      {/* Submit Button & Notice */}
+      <div className="pt-1 space-y-2">
         <button
           type="submit"
           disabled={isSubmitting}
@@ -455,12 +459,12 @@ export default function EnquiryForm({
               <span>Submitting Enquiry...</span>
             </>
           ) : (
-            <span>Send Your Enquiry</span>
+            <span>Submit Enquiry</span>
           )}
         </button>
 
         <p className="text-xs text-stone-500 text-center sm:text-left">
-          Submitting an inquiry does not confirm a booking.
+          Enquiry submission does not confirm a booking. Final availability, pricing, payment and reservation confirmation must be obtained directly from the relevant hotel.
         </p>
       </div>
     </form>

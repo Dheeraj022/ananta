@@ -11,28 +11,22 @@ export default function IntroSection() {
           {/* Main Editorial Text */}
           <div className="w-full lg:col-span-7 space-y-6">
             <SectionHeading
-              eyebrow="Independent Hospitality Partner"
-              title="A Curated Gateway to Rajasthan's Ananta Stays"
+              eyebrow="Independent Travel Agency"
+              title="Property Information & Stay Enquiry Assistance"
               alignment="left"
               className="mb-4"
             />
 
             <p className="text-base text-stone-700 leading-relaxed font-light">
-              At <strong>Guest-assist</strong> (operated by <strong>{siteConfig.companyLegalName}</strong>), we operate as an independent travel partner focused on helping travelers discover and
-              plan stays across four distinguished Ananta hotel properties in Rajasthan. Whether
-              you seek the verdant tranquility of Udaipur, the spiritual serenity of Pushkar, the
-              secluded valleys of Ajabgarh, or the royal architecture of Jaipur, our platform
-              provides comprehensive property information and a streamlined enquiry service.
+              At <strong>Guest-Assist</strong> (operated by <strong>{siteConfig.companyLegalName}</strong>), we operate as an independent travel agency providing general property information, accommodation details, amenities and travel guidance for selected Ananta properties in Rajasthan. Whether you are exploring Udaipur, Pushkar, Ajabgarh, or Jaipur, our platform allows you to browse general property features and submit an enquiry for information assistance.
             </p>
 
             <p className="text-sm text-stone-600 leading-relaxed">
-              Our role is to coordinate with you to clarify your stay preferences, group
-              arrangements, and desired room categories before your request is routed through the
-              appropriate resort channels.
+              We assist with your information request and help you identify stay details. Final availability, pricing, payment, and reservation confirmation must be obtained directly from the relevant hotel.
             </p>
           </div>
 
-          {/* Partner Service Highlights - Visible on Desktop/Laptop only; moved to About Us for mobile */}
+          {/* Service Highlights - Visible on Desktop/Laptop only; moved to About Us for mobile */}
           <div className="hidden lg:block lg:col-span-5 bg-sand-cream/60 p-8 rounded-xl border border-sand space-y-6">
             <h3 className="font-serif text-xl font-medium text-charcoal border-b border-sand pb-3">
               How Our Service Assists You
@@ -45,10 +39,10 @@ export default function IntroSection() {
                 </div>
                 <div>
                   <h4 className="text-xs uppercase tracking-wider font-semibold text-charcoal">
-                    Multi-Property Discovery
+                    Property Information
                   </h4>
                   <p className="text-xs text-stone-600 leading-relaxed mt-0.5">
-                    Explore verified room types, amenities, and landscapes across all 4 resorts in one place.
+                    Browse accommodation categories, general amenities, and destination settings across 4 properties.
                   </p>
                 </div>
               </div>
@@ -62,7 +56,7 @@ export default function IntroSection() {
                     Enquiry Assistance
                   </h4>
                   <p className="text-xs text-stone-600 leading-relaxed mt-0.5">
-                    We review your dates and room preferences to guide your enquiry to the relevant property desk.
+                    Share your preferred property, dates, and questions for responsive enquiry support.
                   </p>
                 </div>
               </div>
@@ -76,7 +70,7 @@ export default function IntroSection() {
                     Transparent Communication
                   </h4>
                   <p className="text-xs text-stone-600 leading-relaxed mt-0.5">
-                    Clear guidance on resort details with no hidden fees or inflated promises.
+                    No online booking, no hotel payment collection, and direct hotel confirmation.
                   </p>
                 </div>
               </div>

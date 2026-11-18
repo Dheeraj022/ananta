@@ -16,6 +16,7 @@ import {
   ChevronRight,
   ChevronDown,
   Wind,
+  Snowflake,
   Wifi,
   Tv,
   Phone,
@@ -76,7 +77,7 @@ function getAmenityIcon(name: string, isMobile = false) {
   const lower = name.toLowerCase();
 
   if (lower.includes("condition") || lower.includes("ac ") || lower.includes("climate")) {
-    return <Wind className={iconClass} />;
+    return <Snowflake className={iconClass} />;
   }
   if (lower.includes("wi-fi") || lower.includes("wifi") || lower.includes("internet")) {
     return <Wifi className={iconClass} />;
@@ -146,7 +147,7 @@ function RoomAmenitiesSection({
           Amenities
         </h4>
         <p className={`${isMobile ? "text-[11px]" : "text-xs"} text-stone-500 leading-relaxed`}>
-          Amenities shown are for reference only. Availability, access, timings and inclusions may vary.
+          Facilities, access, timings, inclusions and charges may vary by property and are subject to confirmation.
         </p>
       </div>
 
@@ -292,6 +293,10 @@ export default function AccommodationAccordion({
                 </div>
               </div>
 
+              <p className="text-[10px] text-stone-500 italic">
+                Room categories, features, occupancy and availability are subject to confirmation by the hotel.
+              </p>
+
               {/* Accommodation Overview (Mobile with 2-line clamp & toggle) */}
               <MobileOverviewSection description={acc.description} />
 
@@ -303,10 +308,10 @@ export default function AccommodationAccordion({
                 <button
                   type="button"
                   onClick={() => openEnquiry(propertySlug, acc.name)}
-                  className="w-full min-h-[46px] px-5 py-3 bg-forest hover:bg-forest-hover text-white text-[11px] sm:text-xs font-semibold uppercase tracking-wider rounded transition-all duration-200 shadow-sm flex items-center justify-center gap-2.5 text-center"
+                  className="w-full min-h-[48px] px-4 py-3 bg-forest hover:bg-forest-hover text-white text-[11px] sm:text-xs font-semibold uppercase tracking-wider rounded transition-all duration-200 shadow-sm flex items-center justify-center gap-2 text-center"
                 >
                   <CalendarCheck className="w-4 h-4 shrink-0 text-white" />
-                  <span className="leading-snug text-center">Enquire About {acc.name}</span>
+                  <span className="leading-snug text-center break-words">Enquire About {acc.name}</span>
                 </button>
               </div>
             </div>
@@ -439,6 +444,10 @@ export default function AccommodationAccordion({
                   </div>
                 </div>
               </div>
+
+              <p className="text-[11px] text-stone-500 italic">
+                Room categories, features, occupancy and availability are subject to confirmation by the hotel.
+              </p>
 
               {/* Room Description */}
               <div>

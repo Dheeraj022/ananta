@@ -8,30 +8,30 @@ import { Calendar, BedDouble, Send, CheckCircle2, ArrowRight, ShieldCheck } from
 const steps = [
   {
     step: "01",
-    title: "Choose Resort & Dates",
+    title: "Explore Property Information",
     description:
-      "Select your preferred retreat among Udaipur, Pushkar, Ajabgarh, or Jaipur. Choose your intended dates and adult guest count in the search concierge.",
+      "Browse general information about the selected property, accommodation categories and facilities.",
     icon: <Calendar className="w-6 h-6 text-forest" />,
   },
   {
     step: "02",
-    title: "Browse Verified Rooms",
+    title: "Submit Your Enquiry",
     description:
-      "Explore high-resolution galleries, room layouts, open-air shower villas, luxury tented suites, and plunge pool categories with verified specifications.",
+      "Share your preferred property, travel dates, guest details and the information you would like to know.",
     icon: <BedDouble className="w-6 h-6 text-forest" />,
   },
   {
     step: "03",
-    title: "Submit Stay Enquiry",
+    title: "Receive Enquiry Assistance",
     description:
-      "Provide your contact details and any special requests via our simple form. No advance payment or credit card details are ever taken on this website.",
+      "Our team receives your request and assists with the travel information available to us. We do not guarantee room availability or pricing.",
     icon: <Send className="w-6 h-6 text-forest" />,
   },
   {
     step: "04",
-    title: "Receive Concierge Guidance",
+    title: "Confirm Directly with the Hotel",
     description:
-      "Our independent travel desk reviews current resort availability, assists with group or celebration coordination, and connects you with verified booking options.",
+      "For current availability, final rates, payment, reservation confirmation, cancellation and refund terms, contact the relevant hotel directly. Guest-Assist does not take hotel booking payments or confirm hotel reservations.",
     icon: <CheckCircle2 className="w-6 h-6 text-forest" />,
   },
 ];
@@ -43,9 +43,9 @@ export default function HowItWorksSection() {
     <section id="how-it-works" className="py-20 bg-white scroll-mt-20 border-t border-stone-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Effortless Planning"
-          title="Get Your Stay Information in Simple Steps"
-          subtitle="We streamline your getaway planning with transparent property guidance, verified room specifications, and dedicated enquiry assistance."
+          eyebrow="Enquiry Process"
+          title="How Our Enquiry Process Works"
+          subtitle="A straightforward information and enquiry assistance service with direct hotel confirmation."
         />
 
         {/* 4 Steps Grid */}
@@ -96,7 +96,7 @@ export default function HowItWorksSection() {
                 Transparent & Independent Assistance
               </h4>
               <p className="text-xs text-stone-600">
-                100% Free Enquiry Submission • No Payment or Credit Card Required • Personal Concierge Coordination
+                100% Free Enquiry Submission • No Online Booking or Payments • Direct Hotel Confirmation
               </p>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function HowItWorksSection() {
               onClick={() => openEnquiry()}
               className="w-full sm:w-auto px-6 py-3 bg-forest hover:bg-forest-hover text-white text-xs font-medium uppercase tracking-widest rounded transition-all shadow-sm text-center"
             >
-              Start Stay Enquiry
+              Submit Stay Enquiry
             </button>
           </div>
         </div>

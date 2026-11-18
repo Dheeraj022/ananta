@@ -108,15 +108,15 @@ export default function EnquiryStrip() {
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-forest animate-pulse" />
             <span className="text-xs uppercase tracking-wider font-semibold text-charcoal">
-              Stay Enquiry Concierge
+              Stay Information & Enquiry Assistance
             </span>
           </div>
           <p className="text-[11px] text-stone-600 font-light mt-0.5">
-            Share your travel dates and preferences. Our team will assist you with the best options and enquiry support.
+            Share your travel dates and preferences. We assist with your enquiry; hotel confirms current availability.
           </p>
         </div>
         <span className="text-[10px] text-stone-500 uppercase tracking-widest hidden md:inline shrink-0 self-start sm:self-center">
-          Request only. Our team will share availability, pricing and stay details.
+          Enquiry submission does not confirm a booking • Final details directly from hotel
         </span>
       </div>
 

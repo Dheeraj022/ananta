@@ -15,16 +15,16 @@ export default function HomeEnquirySection() {
             <SectionHeading
               eyebrow="Start Planning"
               title="Share Your Stay Details"
-              subtitle="Share your preferred property and stay details. Our team will get in touch to assist with your enquiry."
+              subtitle="Share your preferred property and stay details. We assist with your enquiry; hotel confirms current availability."
               alignment="left"
               className="mb-6"
             />
 
-            {/* Concierge details */}
+            {/* Assistance details */}
             <div className="p-6 bg-white rounded-lg border border-sand space-y-4 shadow-sm">
               <div className="text-xs uppercase tracking-wider font-semibold text-charcoal border-b border-stone-100 pb-2 flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-forest" />
-                <span>Concierge Enquiry Assistance</span>
+                <span>Stay Information & Enquiry Assistance</span>
               </div>
 
               <div className="space-y-3 text-xs">
@@ -32,7 +32,7 @@ export default function HomeEnquirySection() {
                   <Phone className="w-4 h-4 text-forest shrink-0 mt-0.5" />
                   <div>
                     <div className="font-semibold text-charcoal">{siteConfig.contact.phone}</div>
-                    <div className="text-[10px] text-stone-500">Dedicated assistance line</div>
+                    <div className="text-[10px] text-stone-500">Enquiry assistance hotline</div>
                   </div>
                 </div>
 

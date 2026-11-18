@@ -41,31 +41,31 @@ const amenitiesData: AmenityFeature[] = [
     tags: ["Oasis & Zenith", "Buffet & A la Carte", "Alfresco Dining"],
   },
   {
-    title: "Grand Ballrooms & Wedding Lawns",
+    title: "Grand Ballrooms & Celebration Lawns",
     description:
-      "Magnificent pillarless banquet halls and sprawling manicured lawns capable of hosting grand destination weddings, conventions, and corporate retreats for up to 2,000 guests.",
+      "Pillarless banquet halls and manicured lawns designed for destination weddings, social celebrations, conventions, and executive retreats.",
     image:
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_2810/x_2,y_0,w_4996,h_2810,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/ananta-hotels-resorts/The_Ananta_Udaipur_1_niakxc",
     icon: <Building2 className="w-5 h-5 text-forest" />,
-    tags: ["Pillarless Ballrooms", "Manicured Lawns", "Destination Weddings"],
+    tags: ["Ballrooms", "Manicured Lawns", "Celebration Venues"],
   },
   {
     title: "Fitness Center & Indoor Recreation",
     description:
-      "Stay active with modern cardio and strength equipment in the gym, or enjoy billiards, table tennis, chess, and dedicated outdoor play zones for children.",
+      "Stay active with cardio and strength equipment in the gym, or enjoy indoor games like table tennis, chess, and dedicated activity zones.",
     image:
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_1650,c_fit,f_auto/ananta-spa-and-resort-ajabgarh/Reception_a10391d9",
     icon: <Dumbbell className="w-5 h-5 text-forest" />,
-    tags: ["Modern Gymnasium", "Indoor Games Room", "Kids Activity Zone"],
+    tags: ["Gymnasium", "Indoor Games", "Activity Zones"],
   },
   {
-    title: "Golf Buggy Transit & Concierge Services",
+    title: "Resort Transit & Reception Services",
     description:
-      "Seamless chauffeured golf buggy transit across multi-acre resort hillsides, round-the-clock front desk concierge, luggage assistance, and secure valet parking.",
+      "Chauffeured golf buggy transit across hillside pathways, round-the-clock reception assistance, luggage handling, and valet parking.",
     image:
       "https://assets.simplotel.com/simplotel/image/upload/x_0,y_0,w_1499,h_843,r_0,c_crop,q_80,fl_progressive/w_825,f_auto,c_fit/ananta-hotels-resorts/facade_of_the_lobby_at_Ananta_udaipur_sgvzk2_d5ngdh_wxradf",
     icon: <Car className="w-5 h-5 text-forest" />,
-    tags: ["Buggy Estate Transit", "24/7 Front Desk", "Valet Parking"],
+    tags: ["Buggy Transit", "24/7 Front Desk", "Valet Parking"],
   },
 ];
 
@@ -74,9 +74,9 @@ export default function AmenitiesSection() {
     <section id="amenities" className="py-20 bg-sand-cream/40 scroll-mt-20 border-t border-sand">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Resort Living & Facilities"
-          title="Amenities at Ananta"
-          subtitle="Experience exceptional amenities, from Ayurvedic spas and pools to fine dining and grand celebration lawns."
+          eyebrow="Facilities & Services"
+          title="Property Facilities & Amenities"
+          subtitle="Explore information about facilities and services associated with the listed properties. Amenities, access, operating hours, inclusions and charges may vary by property and are subject to confirmation directly with the hotel."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -131,8 +131,8 @@ export default function AmenitiesSection() {
 
         {/* Bottom Note */}
         <div className="mt-10 text-center space-y-2">
-          <p className="text-xs text-stone-500 font-light">
-            Amenities shown are for reference only. Availability, access, timings and inclusions may vary.
+          <p className="text-xs text-stone-500 font-light max-w-3xl mx-auto leading-relaxed">
+            Facilities, access, timings, inclusions and charges may vary by property and are subject to confirmation directly with the hotel.
           </p>
           <div>
             <Link

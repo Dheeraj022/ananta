@@ -1,18 +1,18 @@
 export const siteConfig = {
-  name: "Guest-assist — Independent Travel Partner",
-  shortTitle: "Guest-assist",
-  brandName: "Guest-assist",
+  name: "Guest-Assist — Independent Travel Agency | Travel Information & Enquiry Assistance",
+  shortTitle: "Guest-Assist",
+  brandName: "Guest-Assist",
   companyLegalName: "Hello My Trip Private Limited",
   companyAddress: "BASEMENT, 159-C, New Friends Colony, Sarai Jullena, New Delhi, South East Delhi, Delhi, 110025",
   gstin: "07AAGCH6835F1ZI",
   description:
-    "Guest-assist is an independent travel partner operated by Hello My Trip Private Limited, helping travelers discover and submit stay enquiries for four premier Ananta hotel properties across Rajasthan: Udaipur, Pushkar, Ajabgarh, and Jaipur.",
+    "Guest-Assist is an independent travel agency operated by Hello My Trip Private Limited. We provide general property information, accommodation details, amenities and travel information for selected Ananta properties in Udaipur, Pushkar, Ajabgarh and Jaipur. Submit an enquiry if you need assistance with your information request.",
   partnerDisclosure:
-    "Guest-assist is operated by Hello My Trip Private Limited as an independent travel partner providing property details and stay enquiry assistance. We are not the official website of, or operated by, Ananta Hotels & Resorts. Enquiry submissions do not confirm or guarantee a booking.",
+    "Guest-Assist is an independent travel agency operated by Hello My Trip Private Limited. We are not the official website of, or affiliated with or authorized by, Ananta Hotels & Resorts. Enquiry submission does not confirm a booking. Final availability, pricing, payment and reservation confirmation must be obtained directly from the relevant hotel.",
   shortDisclosure:
-    "Guest-assist • Hello My Trip Private Limited • Independent Travel Partner • Enquiry Concierge Only • Not the Official Ananta Hotels Website",
+    "Guest-Assist • Hello My Trip Private Limited • Independent Travel Agency • Enquiry Assistance Only • Not the Official Ananta Hotels Website",
   bookingNotice:
-    "Submitting an enquiry does not confirm a booking.",
+    "Enquiry submission does not confirm a booking. Final availability, pricing, payment and reservation confirmation must be obtained directly from the relevant hotel.",
   contact: {
     phone: "+91 92790 22649",
     phoneRaw: "+919279022649",
@@ -24,7 +24,7 @@ export const siteConfig = {
     { label: "Home", href: "/" },
     {
       label: "Our Properties",
-      href: "#properties",
+      href: "/#properties",
       children: [
         { label: "The Ananta Udaipur", href: "/properties/the-ananta-udaipur" },
         { label: "Ananta Spa & Resort Pushkar", href: "/properties/ananta-spa-resort-pushkar" },
@@ -43,33 +43,36 @@ export const siteConfig = {
       { label: "Ananta Spa & Resort Jaipur", href: "/properties/ananta-spa-resort-jaipur" },
     ],
     company: [
-      { label: "About Our Partner Service", href: "/about" },
-      { label: "Contact Concierge Desk", href: "/contact" },
-      { label: "Enquiry Guide", href: "/#enquiry" },
+      { label: "About Guest-Assist", href: "/about" },
+      { label: "Our Role & Independence", href: "/#our-role" },
+      { label: "Contact Enquiry Desk", href: "/contact" },
+      { label: "How Enquiry Works", href: "/#how-it-works" },
     ],
     legal: [
       { label: "Disclaimer", href: "/disclaimer" },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Terms & Conditions", href: "/terms-and-conditions" },
+      { label: "Cancellation Policy", href: "/cancellation-policy" },
+      { label: "Refund Policy", href: "/refund-policy" },
     ],
   },
   whyExploreWithUs: [
     {
       title: "Focused Property Insights",
       description:
-        "Detailed overviews of accommodations, amenities, and resort surroundings to help you choose the ideal retreat.",
+        "General overviews of accommodations, amenities, and resort surroundings to help you choose the ideal retreat.",
       icon: "Compass",
     },
     {
       title: "Tailored Enquiry Assistance",
       description:
-        "Our dedicated team reviews your stay preferences, group sizes, and dates to guide your enquiry to the right resort channel.",
+        "Our team receives your travel request and assists with property information to help you submit your preferences.",
       icon: "UserCheck",
     },
     {
       title: "Transparent & Respectful",
       description:
-        "Clear guidance without high-pressure tactics or misleading claims. We provide factual details for a smooth planning experience.",
+        "Independent guidance with no online payment collection, no booking fees, and full clarity on hotel direct confirmation.",
       icon: "ShieldCheck",
     },
     {

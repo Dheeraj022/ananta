@@ -38,9 +38,9 @@ export default function HighlightsSection() {
     <section className="py-20 bg-charcoal text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading
-          eyebrow="Distinct Settings"
-          title="Factual Architectural & Setting Highlights"
-          subtitle="Each property reflects its geographic surroundings, offering distinct structural designs and accommodation formats."
+          eyebrow="Dining & Experiences"
+          title="Dining & Destination Experiences"
+          subtitle="Find general information about dining options and experiences associated with the properties and their surrounding destinations. Venue operations, timings, availability and charges may change. Confirm details directly with the relevant property."
           theme="dark"
         />
 

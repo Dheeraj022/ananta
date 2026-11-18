@@ -18,7 +18,7 @@ export default function PartnerNotice({
       >
         <Info className="w-4 h-4 text-amber-800 shrink-0 mt-0.5" />
         <div>
-          <span className="font-semibold">Independent Travel Partner Disclosure:</span>{" "}
+          <span className="font-semibold">Independent Agency Disclosure:</span>{" "}
           {siteConfig.partnerDisclosure}
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function PartnerNotice({
       >
         <div className="flex items-center gap-2 mb-2 text-forest font-semibold text-xs uppercase tracking-wider">
           <Info className="w-4 h-4" />
-          <span>Independent Travel Partner</span>
+          <span>Independent Travel Agency</span>
         </div>
         <p className="text-sm leading-relaxed text-stone-700">
           {siteConfig.partnerDisclosure}
@@ -44,15 +44,15 @@ export default function PartnerNotice({
   // Top or section banner - 100% SOLID OPAQUE BACKGROUND (no transparency)
   return (
     <aside
-      aria-label="Independent Partner Disclosure"
+      aria-label="Independent Agency Disclosure"
       className={`bg-[#F1E8D9] border-b border-[#DFCBB0] py-1.5 px-3 text-[11px] text-charcoal tracking-tight font-normal leading-normal ${className}`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-center flex-nowrap gap-2 whitespace-nowrap overflow-hidden">
         <span className="font-semibold text-forest uppercase tracking-wider text-[10px] bg-white px-2 py-0.5 rounded border border-forest/20 shadow-xs shrink-0">
-          Independent Partner
+          Independent Agency
         </span>
         <span className="text-stone-800 shrink-0">
-          Operated by <strong>{siteConfig.companyLegalName}</strong> • Enquiry concierge only • Not the official website of Ananta Hotels
+          Operated by <strong>{siteConfig.companyLegalName}</strong> • Enquiry assistance only • Not the official website of Ananta Hotels
         </span>
         <span className="hidden lg:inline-flex items-center text-[10px] font-mono text-stone-700 font-medium px-2 py-0.5 rounded bg-white/80 border border-[#DFCBB0] shrink-0">
           GSTIN: {siteConfig.gstin}

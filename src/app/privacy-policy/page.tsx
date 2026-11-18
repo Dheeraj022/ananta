@@ -5,9 +5,9 @@ import { siteConfig } from "@/data/site-config";
 import { ShieldCheck, Lock, Eye, FileText } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Independent Travel Partner",
+  title: "Privacy Policy — Independent Travel Agency",
   description:
-    "Learn how our independent travel partner desk collects, uses, and protects your information when you submit stay enquiries.",
+    "Learn how our independent travel agency collects, uses, and protects your information when you submit stay enquiries.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -21,8 +21,8 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="mt-3 text-stone-600 max-w-2xl text-sm sm:text-base leading-relaxed">
-            Your privacy is paramount. This policy explains how we handle your information when you
-            explore our website and submit enquiries for Ananta resort stays.
+            Your privacy is important to us. This policy explains what information is collected,
+            why it is collected, and how it is handled when you use this website and submit stay enquiries.
           </p>
         </div>
       </div>
@@ -32,113 +32,106 @@ export default function PrivacyPolicyPage() {
         <div className="p-6 bg-forest-surface border border-forest/20 rounded-xl space-y-2">
           <div className="flex items-center gap-2 text-forest font-semibold text-xs uppercase tracking-wider">
             <ShieldCheck className="w-4 h-4" />
-            <span>Commitment to Responsible Data Handling</span>
+            <span>Independent Travel Agency Privacy Notice</span>
           </div>
           <p className="text-xs sm:text-sm text-stone-700">
-            This Privacy Policy applies solely to information collected by this website in our
-            capacity as an independent travel partner. We do not sell, rent, or monetize your
-            personal data under any circumstance.
+            This Privacy Policy applies to information collected by Guest-Assist (operated by{" "}
+            <strong>{siteConfig.companyLegalName}</strong>) in our capacity as an independent travel agency providing travel information and enquiry assistance. We do not sell, rent, or trade your personal data.
           </p>
         </div>
 
         {/* Section 1 */}
         <section className="space-y-4">
           <h2 className="font-serif text-2xl text-charcoal font-semibold">
-            1. Information We Collect
+            1. Information Collected in the Enquiry Form
           </h2>
           <p>
-            When you interact with our website or submit a stay enquiry form, we may collect the
-            following information:
+            When you complete and submit an enquiry form on our website, we collect the following details provided voluntarily by you:
           </p>
           <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm pl-2">
             <li>
-              <strong>Contact Details:</strong> Your full name, email address, and phone number
-              (including country code).
+              <strong>Personal Contact Information:</strong> Full name, email address, and phone number.
             </li>
             <li>
-              <strong>Enquiry Preferences:</strong> Preferred resort property (Udaipur, Pushkar,
-              Ajabgarh, or Jaipur), specific accommodation or villa category, check-in and
-              check-out dates, guest count (adults and children), and any special requirements.
+              <strong>Travel Preferences:</strong> Preferred property (The Ananta Udaipur, Ananta Spa &amp; Resort Pushkar, Ananta Spa &amp; Resort Ajabgarh, or Ananta Spa &amp; Resort Jaipur), optional accommodation format, preferred check-in and check-out dates, number of adults, and number of children.
             </li>
             <li>
-              <strong>Technical Logs:</strong> Non-personally identifiable diagnostic data such as
-              browser type, operating system, and general referrer information to ensure site
-              performance and security.
+              <strong>Your Question / Information Requested:</strong> Specific questions, room requirements, or travel information requested by you.
+            </li>
+            <li>
+              <strong>Technical Diagnostics:</strong> Standard web server logs including IP address, browser type, and referrer headers used solely for system security and abuse prevention.
             </li>
           </ul>
+          <p className="text-xs text-stone-500 italic">
+            Notice: Do not enter credit card numbers, debit card details, bank information, or sensitive financial data into the enquiry form. This website does not process payments or collect payment card information.
+          </p>
         </section>
 
         {/* Section 2 */}
         <section className="space-y-4">
           <h2 className="font-serif text-2xl text-charcoal font-semibold">
-            2. How We Use Your Information
+            2. Purpose of Information Collection
           </h2>
-          <p>We use the data you provide exclusively for legitimate hospitality purposes:</p>
+          <p>We use the information collected via the enquiry form strictly for the following purposes:</p>
           <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm pl-2">
-            <li>To review, evaluate, and respond to your specific resort stay enquiry.</li>
-            <li>
-              To communicate with you via telephone, WhatsApp, or email to clarify travel dates,
-              room availability, and booking formalities.
-            </li>
-            <li>
-              To coordinate with the appropriate resort reservation channels to facilitate your stay
-              booking.
-            </li>
-            <li>To prevent fraudulent submissions, spam, or abusive automated bot entries.</li>
+            <li>To receive, review, and process your specific travel information request.</li>
+            <li>To respond to your questions and communicate with you via telephone, WhatsApp, or email regarding property details, travel dates, and room options.</li>
+            <li>To assist you in identifying the appropriate hotel to contact for final booking, live availability, payment, and reservation confirmation.</li>
+            <li>To protect our website against spam, bot submissions, and unauthorized automated activity.</li>
           </ul>
         </section>
 
         {/* Section 3 */}
         <section className="space-y-4">
           <h2 className="font-serif text-2xl text-charcoal font-semibold">
-            3. Sharing of Information
+            3. Who Receives Your Information &amp; Data Sharing
           </h2>
           <p>
-            Your information is shared only with relevant personnel and partner reservation teams
-            strictly necessary to fulfill your enquiry. We do not share your contact details with
-            unaffiliated third parties, advertisers, or marketing brokers.
+            Your enquiry details are received by the dedicated travel enquiry coordinators of <strong>{siteConfig.companyLegalName}</strong>.
+          </p>
+          <p>
+            Where necessary to assist with your specific travel request (for example, to ascertain room availability, current tariff ranges, or banquet feasibility for your requested dates), your enquiry preferences and contact details may be communicated to the relevant hotel. We do not claim any official affiliation with the hotel, and data is forwarded solely to fulfill your information request.
+          </p>
+          <p>
+            We engage reliable third-party infrastructure service providers to operate our service (including web hosting via Vercel, email delivery systems, and diagnostic tools). These vendors process technical information solely to host and deliver the website securely. We do not sell or license your information to unaffiliated third parties or marketing networks.
           </p>
         </section>
 
         {/* Section 4 */}
         <section className="space-y-4">
           <h2 className="font-serif text-2xl text-charcoal font-semibold">
-            4. Data Security & Storage
+            4. Data Retention &amp; Security
           </h2>
           <p>
-            We implement sensible technical and organizational precautions to protect your personal
-            data against accidental loss, unauthorized access, alteration, or disclosure. All web
-            submissions are transmitted over encrypted Transport Layer Security (HTTPS/TLS)
-            connections.
+            We retain enquiry records only for the period necessary to respond to your request and assist with your travel planning, or as required by applicable Indian legal, accounting, and tax regulations.
+          </p>
+          <p>
+            All web traffic and form submissions are protected via standard Transport Layer Security (HTTPS/TLS) encryption to safeguard your data during transit.
           </p>
         </section>
 
         {/* Section 5 */}
         <section className="space-y-4">
           <h2 className="font-serif text-2xl text-charcoal font-semibold">
-            5. Your Rights & Choices
+            5. Your Rights: Access, Correction &amp; Deletion
           </h2>
           <p>
-            You have the right to request a copy of the personal information we hold about you,
-            request corrections to inaccurate data, or ask for the deletion of your enquiry records
-            from our active systems at any time.
+            You have the right to request access to the personal information you have submitted, request correction of any inaccurate information, or request the deletion of your enquiry data from our active systems.
           </p>
           <p>
-            To exercise these rights, please email our concierge privacy officer at{" "}
+            To exercise your rights, please contact our data privacy desk at:{" "}
             <a
               href={`mailto:${siteConfig.contact.email}`}
-              className="text-forest underline font-mono text-xs"
+              className="text-forest underline font-mono text-xs font-semibold"
             >
               {siteConfig.contact.email}
             </a>
-            .
           </p>
         </section>
 
         {/* Footer update note */}
         <div className="text-xs text-stone-400 pt-6 border-t border-stone-200">
-          Last revised: November 2026. This policy may be updated periodically to reflect changes
-          in our operations or legal guidelines.
+          Last revised: November 2026. Operated by {siteConfig.companyLegalName} (GSTIN: {siteConfig.gstin}, Registered Address: {siteConfig.companyAddress}).
         </div>
       </div>
     </div>

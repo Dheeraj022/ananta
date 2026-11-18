@@ -8,9 +8,9 @@ import { siteConfig } from "@/data/site-config";
 import { Phone, Mail, Clock, MapPin, ShieldAlert } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Concierge Desk — Stay Enquiries",
+  title: "Contact Enquiry Desk — Travel Information & Enquiries",
   description:
-    "Contact our independent partner concierge desk for assistance with stays at Ananta Udaipur, Pushkar, Ajabgarh, and Jaipur.",
+    "Contact our independent travel agency enquiry desk for assistance with stay information at Ananta Udaipur, Pushkar, Ajabgarh, and Jaipur.",
 };
 
 export default function ContactPage() {
@@ -21,11 +21,10 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumbs items={[{ label: "Contact Us" }]} className="mb-4" />
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-light text-charcoal">
-            Contact Concierge Desk
+            Contact Enquiry Desk
           </h1>
           <p className="mt-3 text-stone-600 max-w-2xl text-sm sm:text-base leading-relaxed">
-            Have questions regarding accommodation options, group retreats, or destination
-            enquiries? Our independent partner desk is here to assist.
+            Have questions regarding accommodation options, property facilities, or travel information? Our independent enquiry team is here to assist.
           </p>
         </div>
       </div>
@@ -36,14 +35,14 @@ export default function ContactPage() {
           <div className="lg:col-span-5 space-y-8">
             <div>
               <div className="text-[10px] uppercase tracking-widest text-forest font-semibold mb-2">
-                Travel Partner Desk
+                Independent Travel Agency
               </div>
               <h2 className="font-serif text-2xl sm:text-3xl text-charcoal font-medium">
                 Get in Touch
               </h2>
               <p className="mt-3 text-stone-600 text-sm leading-relaxed">
                 Reach out to our enquiry coordinators directly by telephone or email, or submit the
-                stay enquiry form for a prioritized response.
+                stay enquiry form for responsive assistance.
               </p>
             </div>
 
@@ -52,7 +51,7 @@ export default function ContactPage() {
               <div className="p-5 bg-sand-cream/50 rounded-lg border border-sand space-y-1">
                 <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-stone-500 font-semibold">
                   <Phone className="w-4 h-4 text-forest" />
-                  <span>Enquiry Assistance Line</span>
+                  <span>Enquiry Assistance Hotline</span>
                 </div>
                 <div className="text-base font-semibold text-charcoal pt-1">
                   <a href={`tel:${siteConfig.contact.phoneRaw}`} className="hover:text-forest">
@@ -60,7 +59,7 @@ export default function ContactPage() {
                   </a>
                 </div>
                 <div className="text-[11px] text-stone-500">
-                  Client verification notice: Partner concierge desk contact.
+                  Enquiry assistance hotline (Monday – Saturday: 9:00 AM – 8:00 PM IST)
                 </div>
               </div>
 
@@ -75,7 +74,7 @@ export default function ContactPage() {
                   </a>
                 </div>
                 <div className="text-[11px] text-stone-500">
-                  Monitored for retreat enquiries and follow-ups.
+                  Monitored for information requests and enquiry follow-ups.
                 </div>
               </div>
 

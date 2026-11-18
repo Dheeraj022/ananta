@@ -13,6 +13,10 @@ import {
   Car,
   MapPin,
   Utensils,
+  Mountain,
+  Castle,
+  Droplets,
+  Tent,
   CheckCircle,
 } from "lucide-react";
 
@@ -33,6 +37,10 @@ const iconDict: Record<string, React.ReactNode> = {
   Car: <Car className="w-5 h-5" />,
   MapPin: <MapPin className="w-5 h-5" />,
   Utensils: <Utensils className="w-5 h-5" />,
+  Mountain: <Mountain className="w-5 h-5" />,
+  Castle: <Castle className="w-5 h-5" />,
+  Droplets: <Droplets className="w-5 h-5" />,
+  Tent: <Tent className="w-5 h-5" />,
 };
 
 export default function AmenitiesGrid({ amenities, className = "" }: AmenitiesGridProps) {

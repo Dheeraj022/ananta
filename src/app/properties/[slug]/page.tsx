@@ -34,9 +34,9 @@ export async function generateMetadata({ params }: PropertyPageProps): Promise<M
 
   return {
     title: `${property.name} — ${property.location.city}, Rajasthan`,
-    description: `${property.shortDescription} Explore room categories, resort facilities, and submit stay enquiries with an independent travel partner.`,
+    description: `${property.shortDescription} Explore room categories, resort facilities, and submit stay enquiries with an independent travel agency.`,
     openGraph: {
-      title: `${property.name} | Guest-assist`,
+      title: `${property.name} | Guest-Assist`,
       description: property.shortDescription,
       images: [{ url: property.heroImage }],
     },
@@ -97,7 +97,7 @@ export default function PropertyPage({ params, searchParams }: PropertyPageProps
       <section id="property-enquiry" className="py-20 bg-sand-cream/70 border-t border-sand scroll-mt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Personal Concierge"
+            eyebrow="Enquiry Assistance"
             title={`Enquire About Staying at ${property.name}`}
             subtitle="Your selected stay dates and guest count are pre-filled below. Complete your contact details to submit your enquiry."
           />
@@ -111,7 +111,7 @@ export default function PropertyPage({ params, searchParams }: PropertyPageProps
             />
           </div>
 
-          {/* 10: Independent Travel Partner Disclosure */}
+          {/* 10: Independent Travel Agency Disclosure */}
           <div className="mt-10">
             <PartnerNotice variant="card" />
           </div>

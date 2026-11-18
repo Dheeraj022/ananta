@@ -17,17 +17,16 @@ export default function Footer() {
                 GUEST-ASSIST
               </span>
               <span className="block text-[10px] tracking-[0.24em] text-gold uppercase mt-0.5">
-                Independent Travel Partner
+                Independent Travel Agency
               </span>
             </div>
             <p className="text-xs text-stone-400 leading-relaxed max-w-sm">
-              Guest-assist is operated by <strong>{siteConfig.companyLegalName}</strong> as an independent travel partner helping discerning travelers discover and submit stay
-              enquiries for four exceptional Ananta resort properties across Rajasthan.
+              Guest-Assist is operated by <strong>{siteConfig.companyLegalName}</strong> as an independent travel agency providing property information and enquiry assistance for four selected Ananta resort properties across Rajasthan.
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-stone-800/80 border border-stone-700/60 text-[10px] uppercase tracking-wider text-stone-300">
                 <ShieldCheck className="w-3.5 h-3.5 text-gold" />
-                <span>Independent Travel Partner Desk</span>
+                <span>Independent Travel Agency</span>
               </span>
               <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-stone-800/80 border border-stone-700/60 text-[10px] font-mono tracking-wider text-gold">
                 <span>GSTIN: {siteConfig.gstin}</span>
@@ -88,12 +87,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/about" className="hover:text-white transition-colors">
-                  About Our Service
+                  About Guest-Assist
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-white transition-colors">
-                  Contact Concierge Desk
+                  Contact Enquiry Desk
                 </Link>
               </li>
               <li>
@@ -103,16 +102,16 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/disclaimer" className="hover:text-white transition-colors">
-                  Partner Disclaimer
+                  Disclaimer
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Concierge Desk Contacts (With verified disclaimer placeholder) */}
+          {/* Enquiry Desk Contacts */}
           <div>
             <h4 className="text-xs uppercase tracking-[0.2em] text-gold font-medium mb-4">
-              Partner Enquiry Desk
+              Enquiry Desk
             </h4>
             <ul className="space-y-3 text-xs text-stone-300">
               <li className="flex items-start gap-2.5">
@@ -154,7 +153,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Mandatory Independent Partner Disclosure Banner */}
+        {/* Mandatory Independent Agency Disclosure Banner */}
         <div className="py-8 my-6 bg-charcoal-dark border border-stone-800 rounded-lg p-5">
           <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
             <div className="space-y-1.5 max-w-4xl">
@@ -188,7 +187,7 @@ export default function Footer() {
           <div>
             © {new Date().getFullYear()} {siteConfig.companyLegalName}. All rights reserved.
           </div>
-          <div className="flex items-center space-x-6">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <Link href="/privacy-policy" className="hover:text-stone-300 transition-colors">
               Privacy Policy
             </Link>
@@ -197,6 +196,12 @@ export default function Footer() {
             </Link>
             <Link href="/terms-and-conditions" className="hover:text-stone-300 transition-colors">
               Terms & Conditions
+            </Link>
+            <Link href="/cancellation-policy" className="hover:text-stone-300 transition-colors">
+              Cancellation Policy
+            </Link>
+            <Link href="/refund-policy" className="hover:text-stone-300 transition-colors">
+              Refund Policy
             </Link>
           </div>
         </div>

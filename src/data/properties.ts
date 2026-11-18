@@ -23,9 +23,9 @@ export const properties: Property[] = [
     slug: "the-ananta-udaipur",
     name: "The Ananta Udaipur",
     shortName: "Udaipur",
-    tagline: "A tranquil sanctuary sprawled across 40+ acres in the Aravalli Hills",
+    tagline: "A tranquil sanctuary nestled in the Aravalli Hills",
     heroIntro:
-      "Welcome to a tranquil 40-acre hillside retreat in the Aravalli range, featuring Balinese villas, open-to-sky showers, and scenic mountain views.",
+      "Welcome to a tranquil hillside retreat nestled in the Aravalli range, featuring Balinese-style villas, open-to-sky showers, and scenic mountain views.",
     location: {
       city: "Udaipur",
       state: "Rajasthan",
@@ -50,7 +50,7 @@ export const properties: Property[] = [
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3378/x_0,y_283,w_5000,h_2812,r_0,c_crop,q_80,fl_progressive/w_825,f_auto,c_fit/ananta-hotels-resorts/The_staff_of_mudra_spa_welcomes_you_to_the_rejuvenating_spa_",
     ],
     shortDescription:
-      "Spread over 40 sprawling acres of verdant landscape against the backdrop of the Aravalli Hills, offering 230+ contemporary villas with open-to-sky bathrooms and panoramic vistas.",
+      "Explore general information about The Ananta Udaipur, including its setting, accommodation categories and property facilities. Room details, views, amenities, rates and availability should be confirmed directly with the hotel.",
     overview: [
       "The Ananta Udaipur is a sprawling nature retreat set against the scenic backdrop of the Aravalli Hills in Rajasthan's City of Lakes.",
       "The property is thoughtfully designed to blend with its natural hillside topography, featuring standalone and clustered contemporary villas with expansive balconies, outdoor showers, and lush landscaped flora.",
@@ -89,11 +89,11 @@ export const properties: Property[] = [
       { name: "Mudra Spa & Wellness", category: "wellness", iconName: "Sparkles", description: "Ayurvedic & international therapy suites" },
       { name: "Fitness Centre", category: "wellness", iconName: "Dumbbell", description: "Well-equipped cardio and strength zone" },
       { name: "Kids Activity Zone", category: "leisure", iconName: "Smile", description: "Dedicated indoor & outdoor children's play area" },
-      { name: "Cycling & Walking Trails", category: "leisure", iconName: "Compass", description: "Paved trails across 40 acres of green estate" },
+      { name: "Cycling & Walking Trails", category: "leisure", iconName: "Compass", description: "Paved trails across scenic hillside estate grounds" },
       { name: "Grand Banquet Lawns", category: "business", iconName: "Users", description: "Expansive open-air manicured grounds" },
       { name: "In-Room Dining", category: "dining", iconName: "Coffee", description: "Curated 24-hour in-villa dining service" },
       { name: "High-Speed Wi-Fi", category: "convenience", iconName: "Wifi", description: "Complimentary access throughout villas & public spaces" },
-      { name: "Valet & Travel Desk", category: "convenience", iconName: "Car", description: "Dedicated concierge for local excursions and transfers" },
+      { name: "Valet & Travel Desk", category: "convenience", iconName: "Car", description: "Assistance with local excursions and transfers" },
     ],
     dining: [
       {
@@ -259,7 +259,7 @@ export const properties: Property[] = [
           "Three master suites with plush king beds and designer fittings",
           "Internal courtyard garden bringing nature indoors",
           "Spacious entertainment lounge with high ceilings",
-          "Custom concierge and in-villa dining coordination",
+          "Stay coordination and in-villa dining assistance",
         ],
         amenities: STANDARD_ROOM_AMENITIES,
       },
@@ -301,7 +301,7 @@ export const properties: Property[] = [
       city: "Pushkar",
       state: "Rajasthan",
       fullAddress: "Village Leela Sevri, 4 km before Pushkar, Pushkar, Rajasthan 305022",
-      setting: "Spanning 9 acres framed by the Aravali hills and desert sands",
+      setting: "Framed by the picturesque Aravali hills and desert sands",
       nearestTransit: "Approx. 140 km from Jaipur International Airport (JAI); 13 km from Ajmer Junction Railway Station",
     },
     heroImage:
@@ -321,7 +321,7 @@ export const properties: Property[] = [
       "https://assets.simplotel.com/simplotel/image/upload/q_90,fl_progressive,w_1920,h_1080,f_auto,c_limit/ananta-spa-resorts-pushkar/15_26950974696_o_ht2pvh",
     ],
     shortDescription:
-      "A 9-acre desert oasis blending 52 contemporary cottages and 20 bespoke tented suites, celebrating the spiritual mysticism and rugged elegance of Pushkar.",
+      "Explore general information about Ananta Spa & Resort Pushkar, including accommodation information, facilities and its location in the Pushkar area. Specific room features, services, rates and availability should be confirmed directly with the property.",
     overview: [
       "Ananta Spa & Resort Pushkar is an oasis of calm located just a short drive from the historic pilgrimage town of Pushkar and its sacred lake.",
       "The resort weaves contemporary comforts with Rajasthani hospitality, showcasing distinctive standalone cottages and royal canopied tented suites set amid palm fronds, water fountains, and backdrop hills.",
@@ -467,7 +467,7 @@ export const properties: Property[] = [
           "/Ananta Photos/Pushkar/Premium Cottage with Jacuzzi/Ananta_Udaipur_Fotowalah-25_ulgb9q.webp",
         ],
         description:
-          "The ultimate couples' hideaway in Pushkar. Features a private in-cottage Jacuzzi tub for soothing soaks under the desert sky, complemented by rich teakwood furnishings, a private balcony, and attentive concierge service.",
+          "The ultimate couples' hideaway in Pushkar. Features a private in-cottage Jacuzzi tub for soothing soaks under the desert sky, complemented by rich teakwood furnishings, a private balcony, and dedicated guest assistance.",
         features: [
           "Private heated Jacuzzi tub for intimate rejuvenation",
           "Private viewing balcony facing the Aravalli peaks",
@@ -535,7 +535,7 @@ export const properties: Property[] = [
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_834,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-and-resort-ajabgarh/lagoon-villa",
     ],
     shortDescription:
-      "An exclusive boutique hideaway tucked into the craggy hills of Ajabgarh, offering private pool villas, serene silence, and proximity to Sariska Tiger Reserve.",
+      "Find general information about Ananta Spa & Resort Ajabgarh, its accommodation categories, facilities and surrounding area. Confirm current room details, facilities, rates and availability directly with the hotel.",
     overview: [
       "Ananta Spa & Resort Ajabgarh is a hidden gem for travelers seeking privacy, natural stillness, and rugged mountain landscapes.",
       "Located in the serene valley near Alwar and Sariska, the boutique property provides a dramatic contrast of stone architecture against the untouched Aravali hills.",
@@ -740,7 +740,7 @@ export const properties: Property[] = [
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_514,y_0,w_3333,h_3333,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/ananta-spa-resort-jaipur/Evoke(2",
     ],
     shortDescription:
-      "A grand royal retreat on the Kukas highway blending classical Rajputana architecture, opulent domes, expansive banquet halls, and contemporary leisure.",
+      "Explore general information about Ananta Spa & Resort Jaipur, including accommodation information, facilities and its location in the Jaipur area. Confirm current room details, facilities, rates and availability directly with the property.",
     overview: [
       "Ananta Spa & Resort Jaipur stands as a magnificent tribute to Rajasthan's royal heritage, featuring grand jharokhas, carved stone pillars, and manicured palatial gardens.",
       "Ideally situated in the hospitality enclave of Kukas near Amer Fort, the resort offers effortless connectivity for leisure travelers, weddings, and corporate gatherings.",

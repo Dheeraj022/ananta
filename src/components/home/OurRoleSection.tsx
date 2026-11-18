@@ -2,22 +2,19 @@ import React from "react";
 import { siteConfig } from "@/data/site-config";
 
 const whatWeDoList = [
-  "Property information & guidance",
-  "Accommodation information",
-  "General travel assistance",
-  "Local sightseeing information",
-  "Enquiry assistance",
-  "Connecting travellers with relevant service providers where applicable",
+  "Provide general travel and property information.",
+  "Display accommodation and facility information where details are available from sources considered reliable.",
+  "Receive customer information requests and provide enquiry assistance.",
+  "Help customers identify which property they want to contact for final information.",
 ];
 
 const whatWeDontDoList = [
-  "We are not the property owner or operator.",
-  "We do not represent the property officially unless stated.",
-  "We do not guarantee room availability.",
-  "We do not guarantee fixed prices.",
-  "We do not claim the lowest or best price.",
-  "We do not make misleading affiliation claims.",
-  "We do not take online booking or payment through this information page.",
+  "We do not own or operate the listed hotels.",
+  "We are not the official website, agent, partner or authorized representative of Ananta Hotels & Resorts.",
+  "We do not guarantee room availability, prices, discounts or inclusions.",
+  "We do not accept hotel booking payments on this website.",
+  "We do not issue hotel booking confirmations.",
+  "We do not control hotel cancellation or refund decisions.",
 ];
 
 export default function OurRoleSection() {
@@ -32,17 +29,14 @@ export default function OurRoleSection() {
           </h2>
 
           {/* Descriptive Statements */}
-          <div className="space-y-2 text-stone-700 text-sm sm:text-base leading-relaxed">
+          <div className="space-y-3 text-stone-700 text-sm sm:text-base leading-relaxed">
             <p>
-              Guest-assist is operated by <strong>{siteConfig.companyLegalName}</strong>, an independent travel partner.
-            </p>
-            <p className="text-stone-600">
-              We provide general property information, guidance and enquiry assistance.
+              <strong>Guest-Assist</strong> is an independent travel agency operated by <strong>{siteConfig.companyLegalName}</strong>. We provide travel information and enquiry assistance to people exploring hotels and resorts in Rajasthan. This website brings together general information about selected Ananta properties in Udaipur, Pushkar, Ajabgarh and Jaipur. Customers can submit an enquiry to request assistance with property and travel information. We do not own or operate the listed properties and do not present this website as the official website of Ananta Hotels & Resorts. Final property details, availability, pricing, payment, booking confirmation, cancellation and refunds are handled directly by the relevant hotel.
             </p>
             <p className="font-semibold text-[#BA8B32] text-sm sm:text-base leading-relaxed pt-1">
-              We are not the owner, operator or official representative of Ananta Hotels & Resorts or any other property unless specifically stated.
+              We are not the owner, operator, agent, partner or authorized representative of Ananta Hotels & Resorts.
             </p>
-            <p className="text-xs text-stone-400 font-light pt-1">
+            <p className="text-xs text-stone-400 font-light">
               Property names, trademarks, images and other brand-related intellectual property belong to their respective owners.
             </p>
           </div>

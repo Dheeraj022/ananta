@@ -62,7 +62,7 @@ export default function Header() {
               GUEST-ASSIST
             </span>
             <span className="text-[9px] sm:text-[10px] tracking-[0.22em] text-forest uppercase font-medium -mt-0.5">
-              Independent Travel Partner
+              Independent Travel Agency
             </span>
           </Link>
 

@@ -17,7 +17,7 @@ export default function WhyExploreSection() {
         <SectionHeading
           eyebrow="Our Commitment"
           title="Why Explore Stays With Us"
-          subtitle="We focus on clarity, verified property details, and attentive enquiry coordination so you can plan your Rajasthan retreat with confidence."
+          subtitle="We focus on clarity, factual property information, and responsive enquiry assistance so you can plan your Rajasthan trip with confidence."
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

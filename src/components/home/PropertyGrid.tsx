@@ -13,8 +13,8 @@ export default function PropertyGrid({ properties }: PropertyGridProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="The Collection"
-          title="Featured Ananta Properties"
-          subtitle="Explore four unique Rajasthan stays with verified details, room categories, and dedicated enquiry support."
+          title="Explore Ananta Properties in Rajasthan"
+          subtitle="Browse general information about four properties in Rajasthan. Property features, accommodation details, facilities and services may vary by location and date. Please confirm current information directly with the relevant property."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-10">

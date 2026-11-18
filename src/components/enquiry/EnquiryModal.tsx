@@ -48,7 +48,7 @@ export default function EnquiryModal() {
         <div className="sticky top-0 z-20 flex items-center justify-between px-6 py-4 bg-sand-cream border-b border-sand">
           <div>
             <div className="text-[10px] uppercase tracking-widest text-forest font-semibold">
-              Independent Partner Concierge
+              Independent Travel Agency | Enquiry Assistance
             </div>
             <h2 id="modal-title" className="text-xl font-serif text-charcoal font-semibold">
               Submit Stay Enquiry

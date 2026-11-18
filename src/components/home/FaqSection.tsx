@@ -9,41 +9,46 @@ interface FaqItem {
   answer: string;
 }
 
-const faqs: FaqItem[] = [
+export const faqs: FaqItem[] = [
   {
     question: "Is this the official website of Ananta Hotels & Resorts?",
     answer:
-      "No. We are an independent travel partner network dedicated to providing detailed property overviews, room specifications, and stay enquiry coordination for Ananta resort properties in Rajasthan. Property names, trademarks, images, and brand assets belong to their respective owners.",
+      "No. This website is independently operated by Hello My Trip Private Limited as a travel information and enquiry assistance service. It is not owned, operated, affiliated with, endorsed by or authorized by Ananta Hotels & Resorts.",
   },
   {
-    question: "Can I make instant online bookings or pay directly on this site?",
+    question: "Can I book or pay for a room on this website?",
     answer:
-      "No. We do not collect online payments or process automated instant bookings on this platform. Our service is strictly informational and enquiry-driven. When you submit your stay preferences, our concierge desk assists with verifying availability and guiding your reservation through official channels.",
+      "No. This website provides property information and enquiry assistance only. It does not accept hotel booking payments or confirm reservations. Please contact the relevant hotel directly for booking and payment.",
   },
   {
-    question: "How does the stay enquiry concierge process work?",
+    question: "Does submitting an enquiry confirm my room?",
     answer:
-      "After you select your preferred resort, check-in/out dates, and guest count, your request is reviewed by our travel desk. We verify matching villa, suite, or cottage availability with the property, clarify any special meal or group preferences, and connect you with confirmed rate options.",
+      "No. Submitting an enquiry only sends your information request to Guest-Assist. It does not reserve a room or guarantee availability.",
   },
   {
-    question: "Are room tariffs guaranteed upon enquiry submission?",
+    question: "Can you confirm room availability and rates?",
     answer:
-      "Submitting an enquiry does not lock in a fixed rate or guarantee room availability. Resort rates fluctuate based on seasonal demand, weekend travel, festivals, and real-time room occupancy. Final pricing and inclusions are confirmed when your reservation is formally processed.",
+      "Guest-Assist does not guarantee live room availability or final rates. The relevant hotel must confirm current availability, applicable rates, taxes, inclusions and conditions directly.",
   },
   {
-    question: "Can you assist with destination weddings, banquets, or corporate group bookings?",
+    question: "Who handles payment and booking confirmation?",
     answer:
-      "Yes. All four featured Ananta properties offer extensive banquet and event infrastructure—ranging from the 40,000+ sq. ft. Nilgiri Lawn in Udaipur to royal courtyard venues in Jaipur and desert celebration spaces in Pushkar. You can mention your group size and event requirements in your enquiry.",
+      "The relevant hotel handles final payment and reservation confirmation. Customers should make payment only through the hotel's confirmed payment process.",
   },
   {
-    question: "What are the standard check-in and check-out timings?",
+    question: "Who handles cancellation and refunds?",
     answer:
-      "Standard check-in across Ananta resorts is typically 2:00 PM onwards, and check-out is 11:00 AM. Early check-in or late check-out requests are subject to resort availability and front desk policy on the day of arrival.",
+      "The relevant hotel’s cancellation and refund terms apply to hotel reservations and payments. Customers should contact the hotel directly. Guest-Assist does not process hotel booking refunds if it has not received the hotel payment.",
   },
   {
-    question: "What cancellation and refund policies apply?",
+    question: "Are the property details always current?",
     answer:
-      "Cancellation and modification terms are established directly by the respective resort property and the specific booking plan selected. Our concierge will communicate the property's applicable cancellation guidelines to you prior to booking confirmation.",
+      "Property details, room categories, facilities, images, timings and services may change. Please confirm current information directly with the relevant property.",
+  },
+  {
+    question: "Does Guest-Assist charge for enquiry submission?",
+    answer:
+      "No. Enquiry submission on Guest-Assist is completely free of charge. We provide travel information and enquiry assistance without charging any fees for submitting your enquiry.",
   },
 ];
 
@@ -60,7 +65,7 @@ export default function FaqSection() {
         <SectionHeading
           eyebrow="Got Questions?"
           title="Frequently Asked Questions"
-          subtitle="Clear answers about our independent travel partner service, stay enquiries, and resort planning across Rajasthan."
+          subtitle="Clear answers about our independent travel agency, stay enquiries, and property information service."
         />
 
         {/* Accordion List */}
