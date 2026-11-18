@@ -27,21 +27,21 @@ import {
 const processSteps = [
   {
     step: "01",
-    title: "Share Your Preferences",
+    title: "Submit Your Travel Enquiry",
     description:
-      "Choose your preferred Ananta destination, intended dates, and adult guest count in our simple enquiry form.",
+      "Share your preferred property, travel dates, guest count, and any specific information you would like to know.",
   },
   {
     step: "02",
-    title: "We Review & Verify",
+    title: "Information Assistance",
     description:
-      "Our desk checks matching room categories, availability feasibility, and property-specific notes.",
+      "Our team reviews your enquiry details and assists with property features, accommodation options, and general travel information.",
   },
   {
     step: "03",
-    title: "Direct Coordination",
+    title: "Stay Confirmation",
     description:
-      "We connect you with verified booking channels and options to finalize your stay.",
+      "We provide property information and details so you can verify current rates, availability, and confirm your stay directly with the hotel.",
   },
 ];
 
@@ -237,7 +237,7 @@ export default function AboutContent() {
                     Multi-Property Discovery
                   </h4>
                   <p className="text-xs text-stone-600 leading-relaxed mt-1">
-                    Explore verified room types, amenities, and landscapes across all 4 resorts in one place.
+                    Explore room categories, property amenities, and landscapes across all four properties in one place.
                   </p>
                 </div>
               </div>
@@ -337,7 +337,7 @@ export default function AboutContent() {
               How Our Enquiry Assistance Works
             </h2>
             <p className="mt-3 text-stone-600 text-sm sm:text-base font-light">
-              A transparent, step-by-step approach to luxury resort enquiry coordination.
+              A transparent, step-by-step approach to property information and enquiry assistance.
             </p>
           </div>
 
@@ -360,20 +360,6 @@ export default function AboutContent() {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="mt-10 p-5 rounded-xl bg-sand-cream/70 border border-sand flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-700">
-            <div className="flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4 text-forest shrink-0" />
-              <span>No credit card required • Zero booking fees • Enquiry assistance service</span>
-            </div>
-            <button
-              type="button"
-              onClick={() => openEnquiry()}
-              className="px-5 py-2 bg-forest text-white uppercase tracking-wider font-medium text-[11px] rounded shrink-0 hover:bg-forest-hover transition-colors"
-            >
-              Start Stay Enquiry
-            </button>
           </div>
         </div>
       </section>
@@ -538,9 +524,8 @@ export default function AboutContent() {
                       {faq.question}
                     </span>
                     <div
-                      className={`w-6 h-6 rounded-full bg-sand-cream flex items-center justify-center shrink-0 text-stone-600 transition-transform duration-200 ${
-                        isOpen ? "rotate-180 bg-forest text-white" : ""
-                      }`}
+                      className={`w-6 h-6 rounded-full bg-sand-cream flex items-center justify-center shrink-0 text-stone-600 transition-transform duration-200 ${isOpen ? "rotate-180 bg-forest text-white" : ""
+                        }`}
                     >
                       <ChevronDown className="w-3.5 h-3.5" />
                     </div>

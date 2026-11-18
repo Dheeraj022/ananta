@@ -45,13 +45,13 @@ export default function PartnerNotice({
   return (
     <aside
       aria-label="Independent Agency Disclosure"
-      className={`bg-[#F1E8D9] border-b border-[#DFCBB0] py-1.5 px-3 text-[11px] text-charcoal tracking-tight font-normal leading-normal ${className}`}
+      className={`bg-[#F1E8D9] border-b border-[#DFCBB0] py-1.5 px-3 text-[10px] sm:text-[11px] text-charcoal tracking-tight font-normal leading-tight sm:leading-normal ${className}`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-center flex-nowrap gap-2 whitespace-nowrap overflow-hidden">
-        <span className="font-semibold text-forest uppercase tracking-wider text-[10px] bg-white px-2 py-0.5 rounded border border-forest/20 shadow-xs shrink-0">
+      <div className="max-w-7xl mx-auto flex flex-wrap sm:flex-nowrap items-center justify-center gap-x-2 gap-y-1 text-center sm:text-left">
+        <span className="font-semibold text-forest uppercase tracking-wider text-[9px] sm:text-[10px] bg-white px-1.5 sm:px-2 py-0.5 rounded border border-forest/20 shadow-xs shrink-0 inline-block">
           Independent Agency
         </span>
-        <span className="text-stone-800 shrink-0">
+        <span className="text-stone-800">
           Operated by <strong>{siteConfig.companyLegalName}</strong> • Enquiry assistance only • Not the official website of Ananta Hotels
         </span>
         <span className="hidden lg:inline-flex items-center text-[10px] font-mono text-stone-700 font-medium px-2 py-0.5 rounded bg-white/80 border border-[#DFCBB0] shrink-0">
@@ -59,7 +59,7 @@ export default function PartnerNotice({
         </span>
         <a
           href="/disclaimer"
-          className="text-forest hover:text-forest-dark font-medium underline underline-offset-2 shrink-0 ml-0.5"
+          className="hidden sm:inline text-forest hover:text-forest-dark font-medium underline underline-offset-2 shrink-0 whitespace-nowrap ml-0.5"
         >
           Read Disclosure
         </a>

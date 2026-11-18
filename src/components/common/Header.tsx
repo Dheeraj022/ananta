@@ -36,12 +36,12 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 w-full bg-white shadow-sm">
-      {/* Top Disclosure Strip - Shown only on laptop/desktop (hidden on mobile and tablet); smoothly hides after scroll */}
+      {/* Top Disclosure Strip - Shown on mobile, tablet, and desktop; smoothly hides after scroll */}
       <div
-        className={`hidden lg:block w-full overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`w-full overflow-hidden transition-all duration-300 ease-in-out ${
           isScrolled
             ? "max-h-0 opacity-0 -translate-y-full pointer-events-none"
-            : "max-h-16 opacity-100 translate-y-0"
+            : "max-h-24 sm:max-h-16 opacity-100 translate-y-0"
         }`}
       >
         <PartnerNotice variant="banner" />
