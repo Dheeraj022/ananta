@@ -112,11 +112,11 @@ export default function EnquiryStrip() {
             </span>
           </div>
           <p className="text-[11px] text-stone-600 font-light mt-0.5">
-            Share your travel dates and preferences. We assist with your enquiry; hotel confirms current availability.
+            Share your travel dates and preferences. This form does not check live availability or make a reservation; the hotel independently confirms availability, rates, and reservations.
           </p>
         </div>
         <span className="text-[10px] text-stone-500 uppercase tracking-widest hidden md:inline shrink-0 self-start sm:self-center">
-          Enquiry submission does not confirm a booking • Final details directly from hotel
+          Enquiry assistance only • Final details directly from hotel
         </span>
       </div>
 
@@ -131,7 +131,7 @@ export default function EnquiryStrip() {
         {/* Col 1: Destination Hotel (4 cols) */}
         <div className="lg:col-span-4">
           <label className="block text-[10px] uppercase tracking-wider text-stone-500 font-semibold mb-1">
-            Featured Resort
+            Select a Property
           </label>
           <div className="relative cursor-pointer">
             <select
@@ -238,14 +238,14 @@ export default function EnquiryStrip() {
           </div>
         </div>
 
-        {/* Col 5: Search Button (2 cols) */}
+        {/* Col 5: Submit Button (2 cols) */}
         <div className="lg:col-span-2">
           <button
             type="submit"
-            className="w-full py-2.5 px-4 bg-forest hover:bg-forest-hover text-white text-xs font-medium uppercase tracking-wider rounded transition-colors flex items-center justify-center gap-1.5 shadow-sm hover:shadow"
+            className="w-full py-2.5 px-3 bg-forest hover:bg-forest-hover text-white text-xs font-medium uppercase tracking-wider rounded transition-colors flex items-center justify-center gap-1.5 shadow-sm hover:shadow"
           >
-            <span>Search Stays</span>
-            <ArrowRight className="w-3.5 h-3.5" />
+            <span>Submit Stay Enquiry</span>
+            <ArrowRight className="w-3.5 h-3.5 shrink-0" />
           </button>
         </div>
       </form>

@@ -16,7 +16,7 @@ const amenitiesData: AmenityFeature[] = [
   {
     title: "Mudra Spa & Ayurvedic Wellness",
     description:
-      "Signature holistic Ayurvedic therapies, detoxifying herbal steam & sauna, body scrubs, and restorative couple massages administered by certified wellness experts.",
+      "Signature holistic Ayurvedic therapies, herbal steam, body scrubs, and restorative couple treatments designed for relaxation.",
     image:
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3378/x_0,y_283,w_5000,h_2812,r_0,c_crop,q_80,fl_progressive/w_825,f_auto,c_fit/ananta-hotels-resorts/The_staff_of_mudra_spa_welcomes_you_to_the_rejuvenating_spa_",
     icon: <Sparkles className="w-5 h-5 text-forest" />,
@@ -25,11 +25,11 @@ const amenitiesData: AmenityFeature[] = [
   {
     title: "Scenic Swimming Pools & Plunge Pools",
     description:
-      "Expansive outdoor infinity pools framing the rolling Aravallis, accompanied by sun-lounging decks and private temperature-controlled villa plunge pools.",
+      "Expansive outdoor pools framing scenic landscapes, accompanied by sun-lounging decks and relaxing poolside relaxation areas.",
     image:
       "https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_450,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_2475,f_auto,c_fit/the-ananta-udaipur/Swimming_Pool_",
     icon: <Waves className="w-5 h-5 text-forest" />,
-    tags: ["Infinity Pools", "Kids Pool Area", "Private Plunge Pools"],
+    tags: ["Outdoor Pools", "Sun Decks", "Poolside Loungers"],
   },
   {
     title: "Multi-Cuisine Dining & Lounge Terraces",
@@ -59,13 +59,13 @@ const amenitiesData: AmenityFeature[] = [
     tags: ["Gymnasium", "Indoor Games", "Activity Zones"],
   },
   {
-    title: "Resort Transit & Reception Services",
+    title: "Resort Reception & Guest Assistance",
     description:
-      "Chauffeured golf buggy transit across hillside pathways, round-the-clock reception assistance, luggage handling, and valet parking.",
+      "Reception assistance, luggage support, and property transit where available to assist guests during their stay.",
     image:
       "https://assets.simplotel.com/simplotel/image/upload/x_0,y_0,w_1499,h_843,r_0,c_crop,q_80,fl_progressive/w_825,f_auto,c_fit/ananta-hotels-resorts/facade_of_the_lobby_at_Ananta_udaipur_sgvzk2_d5ngdh_wxradf",
     icon: <Car className="w-5 h-5 text-forest" />,
-    tags: ["Buggy Transit", "24/7 Front Desk", "Valet Parking"],
+    tags: ["Reception Desk", "Guest Support", "Property Transit"],
   },
 ];
 

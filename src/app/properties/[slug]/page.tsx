@@ -76,7 +76,7 @@ export default function PropertyPage({ params, searchParams }: PropertyPageProps
           <SectionHeading
             eyebrow="Accommodations & Villas"
             title="Browse Rooms & Villas"
-            subtitle="Explore luxury villas, suites, and cottages. View photo galleries, specifications, bed configurations, and enquire directly for your stay."
+            subtitle="Explore villas, suites, and cottages. View photo galleries, room configurations, and submit an enquiry about your preferred accommodation."
           />
 
           <AccommodationAccordion

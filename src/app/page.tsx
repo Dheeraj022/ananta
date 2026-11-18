@@ -31,7 +31,7 @@ export default function HomePage() {
       {/* 6. Frequently Asked Questions */}
       <FaqSection />
 
-      {/* 7. Introduction & Partner Gateway Section */}
+      {/* 7. Introduction & Independent Agency Gateway Section */}
       <IntroSection />
 
       {/* 8. Our Role & Independence Section (Matching Reference Design) */}

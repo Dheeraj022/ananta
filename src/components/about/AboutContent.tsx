@@ -208,7 +208,7 @@ export default function AboutContent() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-forest shrink-0" />
-                <span>Direct Property Guidance</span>
+                <span>Independent Property Information</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-forest shrink-0" />
@@ -234,7 +234,7 @@ export default function AboutContent() {
                 </div>
                 <div>
                   <h4 className="text-xs uppercase tracking-wider font-semibold text-charcoal">
-                    Multi-Property Discovery
+                    Explore Property Information
                   </h4>
                   <p className="text-xs text-stone-600 leading-relaxed mt-1">
                     Explore room categories, property amenities, and landscapes across all four properties in one place.
@@ -251,7 +251,7 @@ export default function AboutContent() {
                     Enquiry Assistance
                   </h4>
                   <p className="text-xs text-stone-600 leading-relaxed mt-1">
-                    We review your dates and room preferences to guide your enquiry to the relevant property desk.
+                    We review your information request and provide general guidance about the listed properties.
                   </p>
                 </div>
               </div>
@@ -386,7 +386,7 @@ export default function AboutContent() {
 
             <div className="space-y-3 text-stone-700 text-sm sm:text-base leading-relaxed">
               <p>
-                <strong>Guest-Assist</strong> is an independent travel agency operated by <strong>{siteConfig.companyLegalName}</strong>. We provide travel information and enquiry assistance to people exploring hotels and resorts in Rajasthan. This website brings together general information about selected Ananta properties in Udaipur, Pushkar, Ajabgarh and Jaipur. Customers can submit an enquiry to request assistance with property and travel information. We do not own or operate the listed properties and do not present this website as the official website of Ananta Hotels &amp; Resorts. Final property details, availability, pricing, payment, booking confirmation, cancellation and refunds are handled directly by the relevant hotel.
+                <strong>Guest-Assist</strong> is an independent travel information and enquiry assistance platform operated by <strong>{siteConfig.companyLegalName}</strong>. We provide general information about selected hotels and resorts to help customers understand accommodation options, facilities and property details. Guest-Assist is not owned, operated, managed, sponsored, affiliated with or officially authorised by Ananta Hotels &amp; Resorts. We do not provide hotel booking confirmation, control room availability, collect hotel reservation payments or issue hotel booking refunds. Customers should contact the respective hotel directly to verify current room availability, rates, applicable policies and reservation details. Any reservation, payment, cancellation or refund is handled directly between the customer and the hotel.
               </p>
               <p className="font-semibold text-[#BA8B32] text-sm sm:text-base leading-relaxed pt-1">
                 We are not the owner, operator, agent, partner or authorized representative of Ananta Hotels &amp; Resorts.

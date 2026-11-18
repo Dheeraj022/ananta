@@ -90,7 +90,7 @@ export default function PrivacyPolicyPage() {
             Your enquiry details are received by the dedicated travel enquiry coordinators of <strong>{siteConfig.companyLegalName}</strong>.
           </p>
           <p>
-            Where necessary to assist with your specific travel request (for example, to ascertain room availability, current tariff ranges, or banquet feasibility for your requested dates), your enquiry preferences and contact details may be communicated to the relevant hotel. We do not claim any official affiliation with the hotel, and data is forwarded solely to fulfill your information request.
+            Where necessary to assist with your specific travel request (for example, to ascertain room availability, current tariff ranges, or banquet feasibility for your requested dates), your enquiry preferences and contact details may be communicated to the relevant hotel. When submitting an enquiry, customers have the option to provide explicit consent allowing Guest-Assist to share their enquiry details with the relevant hotel for this purpose. If you do not grant this consent, your request will be handled internally by our guidance desk without forwarding your details to hotel staff. We do not claim any official affiliation with the hotel, and data is shared solely to fulfill your information request.
           </p>
           <p>
             We engage reliable third-party infrastructure service providers to operate our service (including web hosting via Vercel, email delivery systems, and diagnostic tools). These vendors process technical information solely to host and deliver the website securely. We do not sell or license your information to unaffiliated third parties or marketing networks.

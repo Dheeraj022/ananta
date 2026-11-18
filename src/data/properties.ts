@@ -57,10 +57,10 @@ export const properties: Property[] = [
       "Whether you are planning a serene family getaway, a wellness break at the Mudra Spa, or exploring destination wedding opportunities on expansive banquet lawns, Udaipur provides a secluded sanctuary away from the bustle of the city center.",
     ],
     keyStats: [
-      { label: "Estate Area", value: "40+ Acres" },
-      { label: "Luxury Villas", value: "230+" },
       { label: "Setting", value: "Aravalli Valley" },
-      { label: "Key Feature", value: "Open-to-Sky Bathrooms" },
+      { label: "Accommodation", value: "Villas & Suites" },
+      { label: "Ambiance", value: "Hillside Retreat" },
+      { label: "Features", value: "Open-Air Balconies" },
     ],
     highlights: [
       {
@@ -253,7 +253,7 @@ export const properties: Property[] = [
           "/Ananta Photos/Udaipur/Ananta Villa/C589_2022_304F_naeeed.jpg",
         ],
         description:
-          "The signature three-bedroom Ananta Villa combines contemporary architectural grace with authentic Rajasthani aesthetic accents. Sprawling across 4,500 sq. ft., it features a private swimming pool, internal courtyards, lavish living spaces, and bespoke hospitality services.",
+          "The signature three-bedroom Ananta Villa combines contemporary architectural grace with authentic Rajasthani aesthetic accents. Designed as a spacious multi-bedroom private layout, it features a private swimming pool, internal courtyards, living spaces, and bespoke hospitality services.",
         features: [
           "Private swimming pool with secluded sunbathing area",
           "Three master suites with plush king beds and designer fittings",
@@ -277,13 +277,13 @@ export const properties: Property[] = [
           "/Ananta Photos/Udaipur/Chairman Villa/Ananta_Udaipur_Fotowalah-36_ucdcjn.webp",
         ],
         description:
-          "The absolute pinnacle of luxury accommodation at The Ananta Udaipur. The Chairman Villa is a stately 4,500 sq. ft. private estate boasting three grandiose master suites, an exclusive swimming pool, majestic living pavilion, and panoramic elevated vantage points overlooking the entire Aravalli valley.",
+          "The Chairman Villa at The Ananta Udaipur is a spacious private estate featuring three expansive master suites, an exclusive swimming pool, majestic living pavilion, and panoramic elevated vantage points overlooking the Aravalli valley.",
         features: [
           "Premier private swimming pool with elevated mountain terrace",
           "Three palatial master suites with marble bathrooms",
           "Expansive open-plan living and entertaining pavilion",
           "Dedicated pantry and private bar counter",
-          "Discreet private entrance with personalized butler service",
+          "Private entrance with dedicated living spaces",
         ],
         amenities: STANDARD_ROOM_AMENITIES,
       },
@@ -328,10 +328,10 @@ export const properties: Property[] = [
       "Revered for its tranquil ambiance and restorative Mudra Spa, the resort provides an idyllic base for cultural explorations, camel safaris, and tranquil weekend retreats.",
     ],
     keyStats: [
-      { label: "Resort Grounds", value: "9 Acres" },
-      { label: "Cottages & Tents", value: "72 Keys" },
       { label: "Setting", value: "Desert & Hills" },
-      { label: "Signature", value: "Tented Luxury Suites" },
+      { label: "Accommodation", value: "Cottages & Tents" },
+      { label: "Ambiance", value: "Tranquil Oasis" },
+      { label: "Location", value: "Near Holy Pushkar" },
     ],
     highlights: [
       {

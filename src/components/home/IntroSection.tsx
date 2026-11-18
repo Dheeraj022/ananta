@@ -12,17 +12,17 @@ export default function IntroSection() {
           <div className="w-full lg:col-span-7 space-y-6">
             <SectionHeading
               eyebrow="Independent Travel Agency"
-              title="Property Information & Stay Enquiry Assistance"
+              title="Independent Property Information & Enquiry Assistance"
               alignment="left"
               className="mb-4"
             />
 
             <p className="text-base text-stone-700 leading-relaxed font-light">
-              At <strong>Guest-Assist</strong> (operated by <strong>{siteConfig.companyLegalName}</strong>), we operate as an independent travel agency providing general property information, accommodation details, amenities and travel guidance for selected Ananta properties in Rajasthan. Whether you are exploring Udaipur, Pushkar, Ajabgarh, or Jaipur, our platform allows you to browse general property features and submit an enquiry for information assistance.
+              Explore general information about selected Ananta properties. <strong>Guest-Assist</strong> (operated by <strong>{siteConfig.companyLegalName}</strong>) is an independent travel information and enquiry assistance platform, not an official hotel website or representative. We do not confirm reservations or check live hotel inventory. Contact the respective hotel directly to verify current rates, availability, policies and reservations.
             </p>
 
             <p className="text-sm text-stone-600 leading-relaxed">
-              We assist with your information request and help you identify stay details. Final availability, pricing, payment, and reservation confirmation must be obtained directly from the relevant hotel.
+              We assist with your information request and help you understand property options across Udaipur, Pushkar, Ajabgarh, and Jaipur. Final availability, pricing, payment, and reservation confirmation are handled directly by the relevant hotel.
             </p>
           </div>
 

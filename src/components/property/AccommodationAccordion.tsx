@@ -293,8 +293,8 @@ export default function AccommodationAccordion({
                 </div>
               </div>
 
-              <p className="text-[10px] text-stone-500 italic">
-                Room categories, features, occupancy and availability are subject to confirmation by the hotel.
+              <p className="text-[10px] text-stone-500 italic leading-relaxed">
+                Property information is provided for general reference and may change. Room features, facilities, rates and availability must be confirmed directly with the hotel. Guest-Assist does not operate or represent the property and does not confirm reservations.
               </p>
 
               {/* Accommodation Overview (Mobile with 2-line clamp & toggle) */}
@@ -311,7 +311,7 @@ export default function AccommodationAccordion({
                   className="w-full min-h-[48px] px-4 py-3 bg-forest hover:bg-forest-hover text-white text-[11px] sm:text-xs font-semibold uppercase tracking-wider rounded transition-all duration-200 shadow-sm flex items-center justify-center gap-2 text-center"
                 >
                   <CalendarCheck className="w-4 h-4 shrink-0 text-white" />
-                  <span className="leading-snug text-center break-words">Enquire About {acc.name}</span>
+                  <span className="leading-snug text-center break-words">Submit an Enquiry About {acc.name}</span>
                 </button>
               </div>
             </div>
@@ -445,8 +445,8 @@ export default function AccommodationAccordion({
                 </div>
               </div>
 
-              <p className="text-[11px] text-stone-500 italic">
-                Room categories, features, occupancy and availability are subject to confirmation by the hotel.
+              <p className="text-[11px] text-stone-500 italic leading-relaxed">
+                Property information is provided for general reference and may change. Room features, facilities, rates and availability must be confirmed directly with the hotel. Guest-Assist does not operate or represent the property and does not confirm reservations.
               </p>
 
               {/* Room Description */}
@@ -479,7 +479,7 @@ export default function AccommodationAccordion({
                   className="w-full sm:w-auto px-7 py-3 bg-forest hover:bg-forest-hover text-white text-xs font-semibold uppercase tracking-wider rounded transition-all duration-200 shadow-sm hover:shadow flex items-center justify-center gap-2 group shrink-0"
                 >
                   <CalendarCheck className="w-4 h-4 shrink-0" />
-                  <span>Enquire About This Room</span>
+                  <span>Submit an Enquiry About This Room</span>
                 </button>
               </div>
             </div>

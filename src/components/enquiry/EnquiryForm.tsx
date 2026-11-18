@@ -53,6 +53,7 @@ export default function EnquiryForm({
   const [isSuccess, setIsSuccess] = useState(false);
   const [referenceId, setReferenceId] = useState("");
   const [submitError, setSubmitError] = useState("");
+  const [hotelSharingConsent, setHotelSharingConsent] = useState(false);
 
   // Derive dynamic accommodations based on selected property
   const selectedProperty = properties.find((p) => p.slug === formData.propertySlug);
@@ -150,6 +151,7 @@ export default function EnquiryForm({
       const payload = {
         ...formData,
         propertyName: selectedProperty ? selectedProperty.name : "Featured Property",
+        hotelSharingConsent,
       };
 
       const response = await fetch("/api/enquiry", {
@@ -444,6 +446,21 @@ export default function EnquiryForm({
           Privacy Policy
         </Link>{" "}
         to understand how enquiry information is used.
+      </div>
+
+      {/* Optional Data Sharing Consent Checkbox (Audit recommendation) */}
+      <div className="p-3.5 bg-stone-50 rounded border border-stone-200">
+        <label className="flex items-start gap-2.5 cursor-pointer select-none">
+          <input
+            type="checkbox"
+            checked={hotelSharingConsent}
+            onChange={(e) => setHotelSharingConsent(e.target.checked)}
+            className="mt-0.5 w-4 h-4 rounded border-stone-300 text-forest focus:ring-forest cursor-pointer shrink-0"
+          />
+          <span className="leading-relaxed text-stone-600 text-[11px] sm:text-xs">
+            I agree that Guest-Assist, operated by Hello My Trip Private Limited, may share my enquiry details with the relevant hotel for the purpose of responding to my information request. I understand that Guest-Assist is an independent travel information and enquiry assistance service and is not an official representative of the hotel.
+          </span>
+        </label>
       </div>
 
       {/* Submit Button & Notice */}

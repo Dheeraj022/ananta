@@ -16,6 +16,7 @@ export async function POST(request: Request) {
       children,
       specialRequests,
       privacyAccepted,
+      hotelSharingConsent,
       honeypot,
     } = body;
 
@@ -90,6 +91,7 @@ export async function POST(request: Request) {
       adults,
       children: children || 0,
       specialRequests: specialRequests || "None",
+      hotelSharingConsent: Boolean(hotelSharingConsent),
       timestamp: new Date().toISOString(),
     });
 
